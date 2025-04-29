@@ -65,3 +65,33 @@ A flexible process (pipeline) that can manage different tasks, allowing some tas
 
 **6. Core Principles:**
 Highly modular (parts can be swapped easily), flexible, focused on deep understanding of meaning, uses existing tools, and can be continuously improved.
+
+
+**7. Project Folder Structure:**
+
+```
+poly-parser/
+├── main.py                 # Main starting point, sets up and runs the graph
+├── graph_definition.py     # Defines the state, nodes, and the LangGraph setup
+├── agents/
+│   ├── __init__.py
+│   ├── parser.py           # Agent 1: Reads the document
+│   ├── language_detector.py # Agent 1.5: Detects the language
+│   ├── text_processor.py   # Agent 2: Cleans and improves text (like finding names, places...)
+│   ├── image_analyzer.py   # Agent 3: Analyzes images
+│   ├── chart_analyzer.py   # Agent 4: Analyzes charts
+│   ├── table_analyzer.py   # Agent 5: Analyzes tables
+│   ├── synthesizer.py      # Agent 6: Puts information together
+│   ├── chunker.py          # Agent 7: Breaks text into meaningful parts
+│   └── formatter.py        # Agent 8: Checks quality and formats the output
+├── utils/
+│   └── file_handler.py     # Helper functions to read/write files
+├── notebooks/              # Jupyter notebooks for testing each agent
+│   ├── 01_test_parser.ipynb
+│   ├── 02_test_text_processing.ipynb
+│   ├── ...                 # Other notebooks for each agent
+│   └── 09_test_full_pipeline.ipynb # Tests the whole process
+├── requirements.txt        # Libraries needed for the project
+└── sample_pdfs/            # Holds sample PDF files for testing
+    └── example.pdf
+```
