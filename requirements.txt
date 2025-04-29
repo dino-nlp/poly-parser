@@ -1,0 +1,32 @@
+# Core Langchain and LangGraph
+langchain
+langgraph
+langchain-core
+langchain-community
+
+# LLM Integration (Local)
+langchain-ollama
+ollama # Ensure Ollama server is installed and running separately
+
+# PDF Parsing
+pymupdf # For basic text/image extraction
+unstructured # Powerful parsing, might need extra dependencies like 'local-inference'
+# python-poppler # Often needed by unstructured
+
+# Text Processing & Analysis
+nltk # For sentence tokenization, etc. (download data needed)
+spacy # For NER (download models needed)
+# transformers # For potential local models (captioning, NER)
+# sentence-transformers # For semantic chunking/embeddings
+
+# Image Processing (Optional - requires specific libraries)
+# pillow # Basic image handling
+# pytesseract # For OCR (requires Tesseract installation)
+
+# Utilities
+python-dotenv # For managing environment variables (like Ollama base URL)
+ipykernel # For running Jupyter notebooks
+jupyter # For running Jupyter notebooks
+
+# Add other specific libraries as needed for agents
+# e.g., pandas for table handling, matplotlib for chart understanding (if developing custom logic)
