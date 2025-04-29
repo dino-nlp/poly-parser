@@ -95,3 +95,9 @@ poly-parser/
 └── sample_pdfs/            # Holds sample PDF files for testing
     └── example.pdf
 ```
+
+**8. Run**
+
+```bash
+python main.py sample_pdfs/part0.pdf -o output/part0.json --noviz
+```

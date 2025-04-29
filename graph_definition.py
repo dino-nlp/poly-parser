@@ -1,9 +1,9 @@
 from typing import TypedDict, List, Dict, Any, Optional
-from agents import parser, language_detector, text_processor, image_analyzer, chart_analyzer, table_analyzer, synthesizer, chunker, formatter
+import importlib # Dùng để import động nếu cần, nhưng trực tiếp sẽ rõ hơn
+import traceback # Để in lỗi chi tiết hơn
 
 # --- State Definition ---
-# This TypedDict defines the structure of the data that flows through the graph.
-# Each agent will read from and write to this state.
+# Định nghĩa GraphState ở đây, trước khi import các agent cần nó
 class GraphState(TypedDict):
     """
     Represents the state of the graph at any point in time.
@@ -22,7 +22,7 @@ class GraphState(TypedDict):
         current_agent: Name of the agent currently processing or last processed.
         # Add other relevant fields as needed (e.g., document metadata, language info)
         language: Optional[str] # Detected language (if applicable)
-        metadata: Dict[str, Any] # Document-level metadata
+        metadata: Optional[Dict[str, Any]] # Document-level metadata
     """
     pdf_path: str
     raw_elements: List[Dict[str, Any]]
@@ -39,34 +39,69 @@ class GraphState(TypedDict):
 
 
 # --- Node Creation Function ---
-# This function centralizes the creation of node functions for the graph.
+# Di chuyển import vào đây để tránh circular import
 def create_graph_nodes() -> Dict[str, callable]:
     """
     Creates and returns a dictionary mapping node names to their corresponding agent functions.
+    Imports agent modules only when this function is called.
     """
-    # Instantiate agents or get their processing functions
-    # Note: Agent functions should accept the GraphState dict as input
-    # and return a dictionary containing the fields they've updated.
+    # Import agent modules *inside* the function
+    try:
+        from agents import parser
+        from agents import language_detector
+        from agents import text_processor
+        from agents import image_analyzer
+        from agents import chart_analyzer
+        from agents import table_analyzer
+        from agents import synthesizer
+        from agents import chunker
+        from agents import formatter
+    except ImportError as e:
+        print(f"!!! Failed to import agent modules: {e} !!!")
+        print("Ensure all agent files exist in the 'agents' directory and have no syntax errors.")
+        raise # Re-raise the error to stop execution if imports fail
 
-    # Example (replace with actual agent function calls):
+    # Wrapper function remains the same
     def wrap_agent(agent_func, agent_name):
         def node_func(state: GraphState) -> Dict[str, Any]:
             print(f"--- Running Agent: {agent_name} ---")
+            # Check for previous error before running
+            if state.get("error_message"):
+                 print(f"--- Skipping Agent: {agent_name} due to previous error: {state['error_message']} ---")
+                 # Return an empty dict, indicating no changes to the state by this skipped agent
+                 # The error message persists from the previous state.
+                 return {}
+
             try:
                 # Pass the relevant parts of the state to the agent
                 # The agent function should know what it needs from the state
-                updated_state_parts = agent_func(state)
+                updated_state_parts = agent_func(state) # Call the actual agent function
+                if updated_state_parts is None: # Agent might return None if no changes
+                    updated_state_parts = {}
+
+                # Ensure the agent returned a dictionary
+                if not isinstance(updated_state_parts, dict):
+                     print(f"!!! Warning: Agent {agent_name} did not return a dictionary. Returning empty update. !!!")
+                     updated_state_parts = {}
+
+
                 updated_state_parts["current_agent"] = agent_name # Update tracker
-                updated_state_parts["error_message"] = None # Clear previous errors if successful
+                # Clear previous error message *only if* this agent succeeds *and* returns something
+                # We keep the error if the agent returns nothing or fails
+                if updated_state_parts: # Check if the agent actually returned updates
+                    updated_state_parts["error_message"] = None
+
                 return updated_state_parts
             except Exception as e:
                 print(f"!!! Error in Agent {agent_name}: {e} !!!")
                 # Log the error traceback if needed
-                import traceback
                 traceback.print_exc()
+                # Return the error message in the state update
+                # This will cause subsequent agents to be skipped by the check above
                 return {"error_message": f"Error in {agent_name}: {str(e)}", "current_agent": agent_name}
         return node_func
 
+    # Create the dictionary of nodes using the imported agent functions
     nodes = {
         "parser_agent": wrap_agent(parser.parse_document, "Parser"),
         "language_detection_agent": wrap_agent(language_detector.detect_language, "Language Detector"),
@@ -85,12 +120,10 @@ def create_graph_nodes() -> Dict[str, callable]:
 # def decide_after_parsing(state: GraphState) -> str:
 #     """Determines the next step after parsing."""
 #     if state.get("error_message"):
+#         # Using END requires importing it: from langgraph.graph import END
+#         from langgraph.graph import END
 #         return END # Go directly to end if parsing failed
-#     if any(el['type'] == 'image' for el in state['raw_elements']):
-#         # Need to decide how to route - maybe always go to text first?
-#         return "text_processor_agent" # Or branch out
-#     else:
-#         return "text_processor_agent" # Skip image analysis if no images
+#     # ... rest of the logic ...
 
 # --- Graph Assembly (in main.py) ---
 # The actual graph (StateGraph instance, adding nodes and edges)

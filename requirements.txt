@@ -29,4 +29,7 @@ ipykernel # For running Jupyter notebooks
 jupyter # For running Jupyter notebooks
 
 # Add other specific libraries as needed for agents
-# e.g., pandas for table handling, matplotlib for chart understanding (if developing custom logic)
+pandas
+
+# Graph Visualization
+# brew install graphviz # Requires Graphviz system library to be installed

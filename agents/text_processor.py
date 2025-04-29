@@ -1,7 +1,7 @@
 import re
 from typing import Dict, Any, List
 from graph_definition import GraphState
-from langchain_community.llms import Ollama
+from langchain_ollama import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
@@ -31,7 +31,10 @@ USE_LLM_FOR_NER_ACRONYMS = True and USE_LLM_FOR_CLEANING # Only if LLM cleaning 
 
 # Initialize Ollama LLM (adjust model name as needed)
 # Ensure Ollama server is running: ollama run llama3
-llm = Ollama(model="llama3", base_url=os.getenv("OLLAMA_BASE_URL")) # Use env var for flexibility
+llm = ChatOllama(
+    model="gemma3:4b-it-qat",
+    temperature=0.1,
+)
 
 # --- Basic Cleaning Functions ---
 def basic_text_cleaning(text: str) -> str:

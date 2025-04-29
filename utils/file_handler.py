@@ -1,5 +1,6 @@
 import json
 import os
+from typing import Any
 
 def save_json_output(data: Any, output_path: str):
     """
