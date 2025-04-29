@@ -19,6 +19,10 @@ spacy # For NER (download models needed)
 # transformers # For potential local models (captioning, NER)
 # sentence-transformers # For semantic chunking/embeddings
 
+# Language Detection and Conversion
+langdetect
+pycountry # To convert language codes to names
+
 # Image Processing (Optional - requires specific libraries)
 # pillow # Basic image handling
 # pytesseract # For OCR (requires Tesseract installation)

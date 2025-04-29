@@ -7,8 +7,7 @@ from graph_definition import GraphState, create_graph_nodes
 from utils.file_handler import save_json_output
 import argparse
 
-# Load environment variables (e.g., OLLAMA_BASE_URL)
-load_dotenv()
+load_dotenv(override=True)
 
 def run_pipeline(pdf_path: str, output_path: str, visualize: bool = True, viz_path: str = "workflow_graph.png"):
     """
