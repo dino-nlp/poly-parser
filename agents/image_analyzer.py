@@ -1,9 +1,10 @@
+import re
 from typing import Dict, Any, List
 from graph_definition import GraphState
 import os
 import fitz # To extract image bytes if needed
 import base64
-from langchain_core.messages import HumanMessage
+from langchain.schema.output_parser import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 
 # --- Configuration ---
@@ -18,7 +19,7 @@ if USE_MULTIMODAL_LLM:
     try:
         from langchain_ollama import ChatOllama
         llm_image = ChatOllama(model=os.getenv("IMAGE_ANALYZER_MODEL"), temperature=0)
-        print("Initialized Ollama for image analysis (llava).")
+        print(f"Initialized Ollama for image analysis {os.getenv("IMAGE_ANALYZER_MODEL")}.")
     except ImportError:
         print("langchain_community.llms.Ollama not found. Cannot use LLM for image analysis.")
         USE_MULTIMODAL_LLM = False
@@ -77,21 +78,17 @@ def analyze_images(state: GraphState) -> Dict[str, Any]:
                 print("    Attempting analysis with multi-modal LLM...")
                 try:
                     img_base64 = base64.b64encode(image_bytes).decode('utf-8')
+                    
                     # Include language in the prompt
                     prompt = f"Describe this image in detail in {language}. What does it show? Is there any text visible? If yes, extract the text exactly as it appears."
-                    # system_prompt = "You are an assistant tasked with describing table or image"
-                    # system_message_template = SystemMessagePromptTemplate.from_template(system_prompt)
-                    # msg = HumanMessage(
-                    #     content=[
-                    #         {"type": "text", "text": prompt},
-                    #         {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}
-                    #      ]
-                    # )
+                    system_prompt = "You are an assistant tasked with describing table or image"
+                    system_message_template = SystemMessagePromptTemplate.from_template(system_prompt)
+                    
                     human_prompt = [
                         {
                             "type": "image_url",
                             "image_url": {
-                                "url": "data:image/png;base64," + "{image_base64}",
+                                "url": "data:image/png;base64," + "{img_base64}",
                             },
                         },
                         {
@@ -99,7 +96,15 @@ def analyze_images(state: GraphState) -> Dict[str, Any]:
                             "text": prompt
                         },
                     ]
-                    llm_result = llm_image.invoke(msg)
+                    human_message_template = HumanMessagePromptTemplate.from_template(human_prompt)
+                    prompt = ChatPromptTemplate.from_messages(
+                        [
+                            system_message_template,
+                            human_message_template
+                        ]
+                    )
+                    summarize_chain = prompt | llm_image | StrOutputParser()
+                    llm_result = summarize_chain.invoke(img_base64)
                     print(f"    LLM Result (raw): {llm_result[:100]}...")
                     description = llm_result.strip()
                     # Simple OCR extraction attempt (adjust based on LLM output format)

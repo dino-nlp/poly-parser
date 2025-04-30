@@ -1,6 +1,6 @@
 [
   {
-    "content": "1.\nGIỚI THIỆU TỔNG QUAN1.1\nĐối tượng sử dụng-\nDùng cho công dân Việt Nam có căn cước công dân gắn chíp thực hiện\nđăng ký tài khoản Định danh diện tử1.2\nMô tả tài liệuNội dung tài liệu bao gồm các phần sau:1.\nMục A: Giới thiệu tổng quan2.\nMục B: Hướng dẫn các chức năng hệ thống có trên APP cho người dân sử\ndụng.1.3\nThuật ngữ viết tắtSTT\nThuật ngữ\nÝ nghĩa1\nCCCD\nCăn cước công dân2\nSĐT\nSố điện thoại3\nNSD\nNgười sử dụng1.4 Cấu trúc hệ thốngSau khi đăng nhập vào hệ thống, màn hình trang chủ hiển thị giao diện như hình.",
+    "content": "<think>\nOkay, let's tackle this. The user wants me to clean and reformat the provided Vietnamese text from a PDF. First, I need to understand the structure and content. The original text has some formatting issues like extra spaces, line breaks, and maybe some inconsistencies.\n\nLooking at the start, there's \"7\" followed by a line break. That might be an artifact from the PDF, so I should remove that. Then there's \"1.\" and \"GIỚI THIỆU TỔNG QUAN\" which seems like a section title. The next part is \"1.1 Đối tượng sử dụng\" with a bullet point. The bullet point has a hyphen and some text. I need to check if the hyphen is part of the content or a formatting error. It looks like the hyphen is part of the list, so I'll keep it but ensure the text is properly aligned.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -11,17 +11,106 @@
         318.42999267578125,
         80.19261169433594
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
       "chunk_index": 0,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 5
     }
   },
   {
-    "content": "Table (Format: markdown_basic):\n|  | STT |  |  | Thuật ngữ |  |  | Ý nghĩa |  |\n|--|----|-|-|----------|-|-|--------|-|\n| 1 | None | None | CCCD | None | None | Căn cước công dân | None | None |\n| 2 | None | None | SĐT | None | None | Số điện thoại | None | None |\n| 3 | None | None | NSD | None | None | Người sử dụng | None | None |",
+    "content": "Next, \"1.2 Mô tả tài liệu\" followed by a list of sections. The numbers 1 and 2 are in the text, but the original has them as part of the content. I should make sure the numbering is consistent. Then there's \"1.3 Thuật ngữ viết tắt\" with a table. The original has \"STT\" and \"Thuật ngữ\" with some entries. The formatting here might need adjustment to make it a proper table in markdown.\n\nThe last part is \"1.4 Cấu trúc hệ thống\" with a sentence about the login screen. The original has a period at the end, which is correct. I need to check for any extra spaces or line breaks that might have been introduced during the PDF extraction.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 1,
+      "part_of_element": 2,
+      "total_parts": 5
+    }
+  },
+  {
+    "content": "I should also ensure that all the content is preserved without removing any meaningful information. The user mentioned not to remove headers or footers if they're within the main text, but in this case, the headers are part of the main content. So, I'll keep them. The main task is to reformat the text into well-structured paragraphs and sentences, correct any broken sentences, and remove artifacts like page numbers or unnecessary whitespace.\n\nLet me go through each section step by step. The first section is \"GIỚI THIỆU TỔNG QUAN\" with subsections. The bullet points under \"Đối tượng sử dụng\" need to be properly formatted. The list under \"Mô tả tài liệu\" should have consistent numbering. The table for \"Thuật ngữ viết tắt\" should be formatted correctly using markdown. Finally, the last section about the system structure should be a clear paragraph.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 2,
+      "part_of_element": 3,
+      "total_parts": 5
+    }
+  },
+  {
+    "content": "I'll also check for any redundant spaces or line breaks. For example, the line with \"7\" at the beginning is likely an artifact and should be removed. The line breaks between sections might need to be adjusted for better readability. Ensuring that the text flows smoothly in Vietnamese without any markdown except for the table, which should be in markdown format as per the user's request.\n\nOnce all these adjustments are made, I'll review the text to ensure that the original meaning and structure are preserved, and that the formatting is clean and appropriate for the user's needs.\n</think>\n\n1. GIỚI THIỆU TỔNG QUAN  \n1.1 Đối tượng sử dụng  \n- Dùng cho công dân Việt Nam có căn cước công dân gắn chíp thực hiện đăng ký tài khoản Định danh điện tử.  \n\n1.2 Mô tả tài liệu  \nNội dung tài liệu bao gồm các phần sau:  \n1. Mục A: Giới thiệu tổng quan  \n2. Mục B: Hướng dẫn các chức năng hệ thống có trên APP cho người dân sử dụng.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 3,
+      "part_of_element": 4,
+      "total_parts": 5
+    }
+  },
+  {
+    "content": "1.3 Thuật ngữ viết tắt  \n| STT | Thuật ngữ | Ý nghĩa |  \n|-----|----------|--------|  \n| 1   | CCCD     | Căn cước công dân |  \n| 2   | SĐT      | Số điện thoại |  \n| 3   | NSD      | Người sử dụng |  \n\n1.4 Cấu trúc hệ thống  \nSau khi đăng nhập vào hệ thống, màn hình trang chủ hiển thị giao diện như hình.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 4,
+      "part_of_element": 5,
+      "total_parts": 5
+    }
+  },
+  {
+    "content": "Table (Format: llm_markdown):\n<think>\nOkay, let's tackle this problem. The user wants me to convert some table data into a clean GitHub-flavored Markdown table. The input is given as a list of lists or HTML, but looking at the provided data, it seems like it's already in a tabular format with headers and rows.\n\nFirst, I need to parse the data correctly. The headers are in the first row: |  | STT |  |  | Thuật ngữ |  |  | Ý nghĩa |  |. There are a lot of empty cells here. Let me see. The first column has \"STT\" which probably stands for \"Số thứ tự\" (Serial Number), but there are empty cells around it. Similarly, \"Thuật ngữ\" is \"Term\" and \"Ý nghĩa\" is \"Meaning\". The empty cells might be due to formatting issues or maybe they were part of the original table structure.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -35,14 +124,119 @@
       "table_index": 0,
       "element_type": "table_processed",
       "table_ref": "table_1_0",
-      "table_format": "markdown_basic",
-      "chunk_index": 1,
+      "table_format": "llm_markdown",
+      "chunk_index": 5,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 6
     }
   },
   {
-    "content": "8Hình 1 Giao diện trang chủ mức 01.5 Chức năng chung- Đăng nhập- Đăng ký mức 0- Quên mật khẩu- Đăng ký mức 1- Kích hoạt tài khoản- Trang chủ- Ví giấy tờ- Tab Cá nhân- Đổi tài khoản- Thông báo lưu trú",
+    "content": "Wait, looking at the rows, each row has entries like \"1 | None | None | CCCD | None | None | Căn cước công dân | None | None\". So the structure is: STT (Serial Number), then some empty cells, then Thuật ngữ (Term), more empty cells, then Ý nghĩa (Meaning), and more empty cells. But the headers have the same pattern with empty cells. So maybe the actual headers are STT, Thuật ngữ, and Ý nghĩa, but the table was formatted with extra empty columns.\n\nSo the correct approach is to identify the actual headers. The first row's headers are: empty, STT, empty, empty, Thuật ngữ, empty, empty, Ý nghĩa, empty. But that seems odd. Alternatively, maybe the headers are STT, Thuật ngữ, Ý nghĩa, but the original table had extra empty columns. So the user might have intended the headers to be STT, Thuật ngữ, Ý nghĩa, and the empty cells are just formatting artifacts.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        79.70399856567383,
+        306.28074763371393,
+        544.1599833170573,
+        452.7499885559082
+      ],
+      "table_index": 0,
+      "element_type": "table_processed",
+      "table_ref": "table_1_0",
+      "table_format": "llm_markdown",
+      "chunk_index": 6,
+      "part_of_element": 2,
+      "total_parts": 6
+    }
+  },
+  {
+    "content": "Looking at the data rows: the first row under the headers is \"1 | None | None | CCCD | None | None | Căn cước công dân | None | None\". So the first column is STT (1), then maybe the next columns are empty, then Thuật ngữ (CCCD), then empty, then Ý nghĩa (Căn cước công dân), and so on. But that doesn't align well. Wait, maybe the actual columns are STT, Thuật ngữ, Ý nghĩa, but the original table had extra empty columns. So the headers should be STT, Thuật ngữ, Ý nghĩa, and the empty cells are just part of the original formatting.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        79.70399856567383,
+        306.28074763371393,
+        544.1599833170573,
+        452.7499885559082
+      ],
+      "table_index": 0,
+      "element_type": "table_processed",
+      "table_ref": "table_1_0",
+      "table_format": "llm_markdown",
+      "chunk_index": 7,
+      "part_of_element": 3,
+      "total_parts": 6
+    }
+  },
+  {
+    "content": "So to create the Markdown table, I need to ignore the empty cells and only take the headers that are relevant. Let me check the first row again. The headers are: |  | STT |  |  | Thuật ngữ |  |  | Ý nghĩa |  |. So the first column is empty, then STT, then empty, empty, then Thuật ngữ, empty, empty, then Ý nghĩa, empty. So the actual headers are STT, Thuật ngữ, Ý nghĩa. The empty cells are just part of the original table's formatting. Therefore, the correct Markdown table should have headers: STT | Thuật ngữ | Ý nghĩa.\n\nThen, for the data rows: the first row is \"1 | None | None | CCCD | None | None | Căn cước công dân | None | None\". So the STT is 1, Thuật ngữ is CCCD, and Ý nghĩa is Căn cước công dân. The other cells are empty, so they can be ignored. Similarly for the other rows.\n\nSo the final Markdown table should have three columns: STT, Thuật ngữ, Ý nghĩa. The rows would be:",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        79.70399856567383,
+        306.28074763371393,
+        544.1599833170573,
+        452.7499885559082
+      ],
+      "table_index": 0,
+      "element_type": "table_processed",
+      "table_ref": "table_1_0",
+      "table_format": "llm_markdown",
+      "chunk_index": 8,
+      "part_of_element": 4,
+      "total_parts": 6
+    }
+  },
+  {
+    "content": "So the final Markdown table should have three columns: STT, Thuật ngữ, Ý nghĩa. The rows would be:\n\n| STT | Thuật ngữ | Ý nghĩa |\n|-----|----------|--------|\n| 1   | CCCD     | Căn cước công dân |\n| 2   | SĐT      | Số điện thoại |\n| 3   | NSD      | Người sử dụng |\n\nWait, but looking at the data rows again, the first row under the headers is \"1 | None | None | CCCD | None | None | Căn cước công dân | None | None\". So the STT is 1, then the next columns are None, None, then CCCD, then None, None, then Căn cước công dân, then None, None. So the actual data for each row is STT, Thuật ngữ, Ý nghĩa. So the first row's STT is 1, Thuật ngữ is CCCD, Ý nghĩa is Căn cước công dân. Similarly for the other rows.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        79.70399856567383,
+        306.28074763371393,
+        544.1599833170573,
+        452.7499885559082
+      ],
+      "table_index": 0,
+      "element_type": "table_processed",
+      "table_ref": "table_1_0",
+      "table_format": "llm_markdown",
+      "chunk_index": 9,
+      "part_of_element": 5,
+      "total_parts": 6
+    }
+  },
+  {
+    "content": "Therefore, the correct Markdown table would have three columns: STT, Thuật và Ý nghĩa. The rows would be as above. The empty cells in the original data are just placeholders and should be ignored. So the final answer is the Markdown table with those three columns and the corresponding data.\n</think>\n\n| STT | Thuật ngữ | Ý nghĩa             |\n|-----|----------|--------------------|\n| 1   | CCCD     | Căn cước công dân  |\n| 2   | SĐT      | Số điện thoại      |\n| 3   | NSD      | Người sử dụng      |",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 1,
+      "bbox": [
+        79.70399856567383,
+        306.28074763371393,
+        544.1599833170573,
+        452.7499885559082
+      ],
+      "table_index": 0,
+      "element_type": "table_processed",
+      "table_ref": "table_1_0",
+      "table_format": "llm_markdown",
+      "chunk_index": 10,
+      "part_of_element": 6,
+      "total_parts": 6
+    }
+  },
+  {
+    "content": "<think>\nOkay, let's tackle this. The user wants me to clean and reformat the provided text. First, I'll look at the original text. There's a \"8\" at the start, which might be an artifact from the PDF, maybe a page number. I should remove that.\n\nNext, \"Hình 1 Giao diện trang chủ mức 0\" is the first line. It seems like a heading, but the user mentioned not to remove meaningful content. So I'll keep it as is, maybe adjust the spacing. Then there's \"1.5 Chức năng chung\" which is a section title. The bullet points follow. \n\nLooking at the bullet points, some have extra spaces, like \"-  Đăng nhập\" with two spaces after the hyphen. I'll correct that to \"- Đăng nhập\". Also, check for consistency in spacing. \n\nThe line \"-  Trang chủ\" has two spaces, so I'll fix that. Similarly, \"- Đổi tài khoản\" has two spaces. The last bullet point is \"- Thông báo lưu trú\" which looks okay.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -53,17 +247,62 @@
         318.42999267578125,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 2,
+      "chunk_index": 11,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_2_0.jpeg",
+    "content": "I should also check if there are any other artifacts. The original text doesn't have any other page numbers or headers, so maybe just the \"8\" at the start. Removing that and ensuring the structure is clean. \n\nNow, formatting the bullet points properly. Make sure each starts with a hyphen and no extra spaces. Also, ensure the section titles are correctly capitalized. \n\nPutting it all together, the cleaned text should have the section title \"1.5 Chức năng chung\" followed by the bullet points without extra spaces. The heading \"Hình 1 Giao diện trang chủ mức 0\" remains as is. \n\nDouble-checking for any remaining issues. Looks like the main points are addressed. The user wants the response in Vietnamese, so the text is already in Vietnamese. No markdown needed since the user specified to reformat but not use markdown. \n\nFinal check: remove the \"8\", correct spacing, keep all content, and structure properly. That should do it.\n</think>",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 2,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 12,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Final check: remove the \"8\", correct spacing, keep all content, and structure properly. That should do it.\n</think>\n\nHình 1: Giao diện trang chủ mức 0  \n1.5 Chức năng chung  \n- Đăng nhập  \n- Đăng ký mức 0  \n- Quên mật khẩu  \n- Đăng ký mức 1  \n- Kích hoạt tài khoản  \n- Trang chủ  \n- Ví giấy tờ  \n- Tab Cá nhân  \n- Đổi tài khoản  \n- Thông báo lưu trú",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 2,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 13,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Hình ảnh này hiển thị một màn hình hiển thị thông tin về việc đăng ký tài khoản điện tử (đăng ký tài khoản điện tử) cho các cấp độ khác nhau của Cổng An. Cụ thể, hình ảnh cho thấy hai phần chính:\n\n*   **Đăng ký tài khoản điện tử mức 1:**  Hiển thị thông tin về việc đăng ký tài khoản điện tử cấp độ 1.\n*   **Đăng ký tài khoản điện tử mức 2:**  Hiển thị thông tin về việc đăng ký tài khoản điện tử cấp độ 2.\n\nTrên màn hình, có các mục như \"Thông tin Cổng An\", \"Dịch vụ an sinh xã hội\", \"Chia sẻ thông tin đã được định danh điện tử cho các nhóm thông tin của các Bộ, ngành\".\n\n**Dưới đây là toàn bộ văn bản hiển thị, chính xác như nó xuất hiện trên hình ảnh:**\n\n*   Thông tin Cổng An\n*   Dịch vụ an sinh xã hội\n*   Chia sẻ thông tin đã được định danh điện tử cho các nhóm thông tin của các Bộ, ngành\n*   Thông tin Cổng An\n*   Dịch vụ an sinh xã hội\n*   Chia sẻ thông tin đã được định danh điện tử cho các nhóm thông tin của các Bộ, ngành",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -72,13 +311,28 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_2_0.jpeg",
-      "chunk_index": 3,
+      "chunk_index": 14,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "2. HƯỚNG DẪN SỬ DỤNG2.1 Hướng dẫn cài đặt2.1.1 Đối với hệ điều hành AndroidCài đặt ứng dụng từ CH Play- Bước 1 : NSD truy cập ứng dụng CH Play  Tại thanh công cụ tìm kiếm \nTìm từ khoá “ VNeID ”Hình 2.1-1 Tìm kiếm ứng dụng trên CH Play- Bước 2 : Sau khi App cần tải hiển thị  Chọn “ Cài đặt ” để tải App “Ứngdụng định danh điện tử - VNeID” về máy.",
+    "content": "Chart Summary: Chart/Image: Image_2_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 2,
+      "xref": 51,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_2_0.jpeg",
+      "chunk_index": 15,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "<think>\nOkay, let's tackle this. The user wants me to clean and reformat the provided text from a PDF. The main points are to create well-structured paragraphs in Vietnamese, remove redundant whitespace, correct broken sentences, and eliminate artifacts like page numbers or headers/footers if they're in the main text. I shouldn't remove any meaningful content and preserve the original meaning and structure. Also, if there are lists or code blocks, I should format them appropriately using markdown. The response should only be the cleaned text.\n\nFirst, I'll look at the original text. It starts with \"9\" which might be a page number or an artifact. Since the user mentioned to remove such artifacts if they appear within the main text, I should check if \"9\" is part of the content. In this case, it seems like a page number, so I'll remove it.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -89,17 +343,84 @@
         318.42999267578125,
         80.19261169433594
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 4,
+      "chunk_index": 16,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 4
     }
   },
   {
-    "content": "Image Description: Image: Image_3_0.jpeg",
+    "content": "Next, the section \"2. HƯỚNG DẪN SỬ DỤNG\" is the main heading. The sub-sections are \"2.1 Hướng dẫn cài đặt\" and \"2.1.1 Đối với hệ điều hành Android\". The text under \"2.1.1\" has some formatting issues. The bullet points have inconsistent spacing and some broken sentences. For example, \"- Bước 1 : NSD truy cập ứng dụng CH Play  Tại thanh công cụ tìm kiếm  Tìm từ khoá “ VNeID ”\" has a lot of spaces and the arrow symbols. I need to correct the spacing and ensure the sentences are properly structured.\n\nAlso, the image reference \"Hình 2.1-1 Tìm kiếm ứng dụng trên CH Play\" is mentioned, but since it's a figure, maybe it's okay to keep it as is. The user didn't mention removing images, just artifacts in the text flow. So I'll leave that part.\n\nThe second bullet point has \" Chọn “  Cài đặt ” để tải App  “Ứng dụng định danh điện tử - VNeID” về máy.\" There's extra space before \"Cài đặt\" and between \"App\" and the app name. I'll correct that to make it more readable.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 17,
+      "part_of_element": 2,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "I should also check for any other artifacts. The original text has some line breaks and spaces that might be due to PDF extraction. I'll remove redundant whitespace, so multiple spaces between words or after punctuation are reduced to a single space.\n\nNow, structuring the paragraphs. The original text uses bullet points for steps, which is good. I'll ensure that each bullet point is properly formatted with consistent indentation and spacing. Also, the section numbers and headings should be in the correct format, like \"2.1.1\" followed by the title.\n\nFinally, I'll make sure that the entire text is in Vietnamese, with correct grammar and punctuation. For example, \"NSD\" is an abbreviation for \"Người sử dụng\", which is acceptable in technical documents. I'll keep that as is unless instructed otherwise.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 18,
+      "part_of_element": 3,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "Putting it all together, the cleaned text should have the section headings properly formatted, bullet points with consistent spacing, corrected sentence structures, and removed any page numbers or artifacts. The final output should be well-structured and easy to read.\n</think>\n\n2. HƯỚNG DẪN SỬ DỤNG  \n2.1 Hướng dẫn cài đặt  \n2.1.1 Đối với hệ điều hành Android  \nCài đặt ứng dụng từ CH Play  \n- Bước 1: Người sử dụng truy cập ứng dụng CH Play → Tại thanh công cụ tìm kiếm → Tìm từ khóa “VNeID”  \n  Hình 2.1-1: Tìm kiếm ứng dụng trên CH Play  \n- Bước 2: Sau khi ứng dụng cần tải hiển thị → Chọn “Cài đặt” để tải ứng dụng “Ứng dụng định danh điện tử - VNeID” về máy.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        318.42999267578125,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 19,
+      "part_of_element": 4,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh chụp màn hình của một giao diện điện thoại thông minh.  Màn hình hiển thị giờ: 10:43.  Ở phía trên bên trái, có một biểu tượng đồng hồ.  Phía trên bên phải, có một biểu tượng hiển thị nhiệt độ: 34°C | 49°F.  Phía trên bên phải, có một biểu tượng hiển thị vị trí: Hà Nội.  Ở phía dưới, có các biểu tượng ứng dụng quen thuộc như: Google, Gmail, YouTube, và một biểu tượng khác (có thể là một ứng dụng khác).  Màn hình có màu xanh xám, tạo cảm giác hiện đại và thông tin.  Có một đường kẻ ngang chia màn hình.\n\n**Đọc dịch:**\n\nThe image shows a smartphone screen displaying the time 10:43. It also shows the temperature 34°C | 49°F and the location Hà Nội. There are also icons for Google, Gmail, YouTube, and another icon.\n\n**Extracted Text:**\n\n*   **Thời Thứ, 15 thg 6** (Time, June 15th)\n*   **34°C | 49°F**\n*   **Hà Nội**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -108,13 +429,28 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_3_0.jpeg",
-      "chunk_index": 5,
+      "chunk_index": 20,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_3_1.png",
+    "content": "**Extracted Text:**\n\n*   **Thời Thứ, 15 thg 6** (Time, June 15th)\n*   **34°C | 49°F**\n*   **Hà Nội**\n\nOCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh chụp màn hình của một giao diện điện thoại thông minh.  Màn hình hiển thị giờ: 10:43.  Ở phía trên bên trái, có một biểu tượng đồng hồ.  Phía trên bên phải, có một biểu tượng hiển thị nhiệt độ: 34°C | 49°F.  Phía trên bên phải, có một biểu tượng hiển thị vị trí: Hà Nội.  Ở phía dưới, có các biểu tượng ứng dụng quen thuộc như: Google, Gmail, YouTube, và một biểu tượng khác (có thể là một ứng dụng khác).  Màn hình có màu xanh xám, tạo cảm giác hiện đại và thông tin.  Có một đường kẻ ngang chia màn hình.\n\n**Đọc dịch:**\n\nThe image shows a smartphone screen displaying the time 10:43. It also shows the temperature 34°C | 49°F and the location Hà Nội. There are also icons for Google, Gmail, YouTube, and another icon.\n\n**Extracted Text:**\n\n*   **Thời Thứ, 15 thg 6** (Time, June 15th)\n*   **34°C | 49°F**\n*   **Hà Nội**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "xref": 62,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_3_0.jpeg",
+      "chunk_index": 21,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết:**\n\nHình ảnh hiển thị một giao diện bàn phím điện thoại thông minh.  Bàn phím đang hiển thị các chữ cái tiếng Việt, bao gồm cả chữ hoa và chữ thường.  Có một biểu tượng ứng dụng \"VNeID\" ở phía trên cùng của màn hình.  Bàn phím có các phím số 1 đến 9 và các phím chức năng như dấu chấm câu, dấu ngoặc đơn, và các phím khác.  Có một thanh tìm kiếm ở phía trên cùng bên phải của màn hình.  Hình ảnh cho thấy một giao diện bàn phím đang hoạt động, có thể đang được sử dụng để soạn thảo tin nhắn hoặc văn bản.\n\n**Chính xác các đoạn văn bản hiển thị:**\n\n*   VNeID\n*   VNeID\n*   VNeID bộ công an\n*   VNeID của bộ công an\n*   VNeID khai báo y tế\n\nOCR Text:\n**Mô tả chi tiết:**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -123,13 +459,58 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_3_1.png",
-      "chunk_index": 6,
+      "chunk_index": 22,
+      "part_of_element": 1,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "*   VNeID\n*   VNeID\n*   VNeID bộ công an\n*   VNeID của bộ công an\n*   VNeID khai báo y tế\n\nOCR Text:\n**Mô tả chi tiết:**\n\nHình ảnh hiển thị một giao diện bàn phím điện thoại thông minh.  Bàn phím đang hiển thị các chữ cái tiếng Việt, bao gồm cả chữ hoa và chữ thường.  Có một biểu tượng ứng dụng \"VNeID\" ở phía trên cùng của màn hình.  Bàn phím có các phím số 1 đến 9 và các phím chức năng như dấu chấm câu, dấu ngoặc đơn, và các phím khác.  Có một thanh tìm kiếm ở phía trên cùng bên phải của màn hình.  Hình ảnh cho thấy một giao diện bàn phím đang hoạt động, có thể đang được sử dụng để soạn thảo tin nhắn hoặc văn bản.\n\n**Chính xác các đoạn văn bản hiển thị:**\n\n*   VNeID\n*   VNeID\n*   VNeID bộ công an\n*   VNeID của bộ công an\n*   VNeID khai báo y tế",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "xref": 63,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_3_1.png",
+      "chunk_index": 23,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_3_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "xref": 62,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_3_0.jpeg",
+      "chunk_index": 24,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "10Hình 2.1-2 Cài đặt ứng dụng- Bước 3: NSD chọn “ Mở ” để mở ứng dụng định danh điện tử - VNeID vừatải.- Bước 4: Sau khi tải về và cài đặt, NSD ấn chạy ứng dụng và ấn “ Bắt đầu sử\ndụng ” để tiến hành sử dụng app:",
+    "content": "Chart Summary: Chart/Image: Image_3_1.png - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "xref": 63,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_3_1.png",
+      "chunk_index": 25,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "<think>\nOkay, let's tackle this. The user wants me to clean and reformat the provided text from a PDF. The original text has some issues like extra spaces, broken sentences, and maybe some artifacts. Let me start by reading through the text carefully.\n\nFirst, the text starts with \"10\" which might be a page number or an artifact. Since the user mentioned to remove artifacts like page numbers if they appear in the main text, I should check if \"10\" is part of the content or just a page number. Looking at the rest of the text, it seems like \"10\" is probably a page number, so I'll remove it.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -140,17 +521,84 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 7,
+      "chunk_index": 26,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 4
     }
   },
   {
-    "content": "Image Description: Image: Image_4_0.jpeg",
+    "content": "Next, there's \"Hình 2.1-2 Cài đặt ứng dụng\" which translates to \"Figure 2.1-2 Application Setup\". That seems like a heading, so I'll keep it as is. Then there are bullet points. The first bullet has \"Bước 3: NSD chọn “ Mở ” để mở ứng dụng định danh điện tử - VNeID vừa tải.\" There's an extra space after \"Mở\" and before the hyphen. I'll correct that to make it \"Bước 3: NSD chọn “Mở” để mở ứng dụng định danh điện tử - VNeID vừa tải.\"\n\nThe second bullet is \"Bước 4: Sau khi tải về và cài đặt, NSD ấn chạy ứng dụng và ấn “ Bắt đầu sử dụng ” để tiến hành sử dụng app:\" There are spaces around the quotes and some redundant words like \"ấn\" repeated. I'll adjust it to \"Bước 4: Sau khi tải về và cài đặt, NSD ấn chạy ứng dụng và nhấn “Bắt đầu sử dụng” để tiến hành sử dụng app:\" Also, \"ấn\" is repeated, so changing the second \"ấn\" to \"nhấn\" makes it more natural.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 27,
+      "part_of_element": 2,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "I should check for any other artifacts or formatting issues. The original text uses \"NSD\" which stands for \"Người sử dụng\" (User), so that's okay. The hyphen in \"VNeID vừa tải\" should be a space or a proper punctuation. Since it's part of the app name, maybe it's correct as is. \n\nNow, structuring the paragraphs. The original has two bullet points under the heading. I'll keep the heading and then format the bullets properly with consistent spacing and punctuation. Also, ensuring that the sentences are complete and flow well in Vietnamese.\n\nFinally, I'll review the entire text to make sure there are no remaining artifacts, redundant spaces, or broken sentences. The user emphasized preserving the original meaning and structure, so I need to ensure that the cleaned text accurately reflects the original content without any alterations to the meaning.\n</think>",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 28,
+      "part_of_element": 3,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "Hình 2.1-2: Cài đặt ứng dụng  \n- Bước 3: Người sử dụng chọn “Mở” để mở ứng dụng định danh điện tử - VNeID vừa tải.  \n- Bước 4: Sau khi tải về và cài đặt, người sử dụng ấn chạy ứng dụng và nhấn “Bắt đầu sử dụng” để tiến hành sử dụng app.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 29,
+      "part_of_element": 4,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh hiển thị một giao diện ứng dụng di động (có thể là ứng dụng của VNExpress).  Ở phía trên cùng, có logo VNExpress màu xanh lá cây.  Phía dưới logo là dòng chữ \"Trung tâm dữ liệu quốc gia của vé dân cư\".  Phía dưới dòng chữ đó là một phần của giao diện cài đặt ứng dụng, có các thông tin như \"Thông tin liên hệ của nhà phát hành\", \"Sức khỏe và Thẻ hình\", \"9 N Bài đánh giá\", \"4.0 MB\", và \"Phù hợp cho 3 tuổi trở lên\".  Có hai hình ảnh nhỏ được hiển thị bên dưới, có vẻ như là ảnh chụp màn hình của ứng dụng, có thể là ảnh chụp giao diện của ứng dụng.\n\n**Đoạn văn bản đã trích xuất:**\n\n*   Trung tâm dữ liệu quốc gia của vé dân cư\n*   Thông tin liên hệ của nhà phát hành\n*   Sức khỏe và Thẻ hình\n*   9 N Bài đánh giá\n*   4.0 MB\n*   Phù hợp cho 3 tuổi trở lên\n\nOCR Text:\n**Mô tả chi tiết ảnh:**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -159,13 +607,28 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_4_0.jpeg",
-      "chunk_index": 8,
+      "chunk_index": 30,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_4_1.jpeg",
+    "content": "OCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh hiển thị một giao diện ứng dụng di động (có thể là ứng dụng của VNExpress).  Ở phía trên cùng, có logo VNExpress màu xanh lá cây.  Phía dưới logo là dòng chữ \"Trung tâm dữ liệu quốc gia của vé dân cư\".  Phía dưới dòng chữ đó là một phần của giao diện cài đặt ứng dụng, có các thông tin như \"Thông tin liên hệ của nhà phát hành\", \"Sức khỏe và Thẻ hình\", \"9 N Bài đánh giá\", \"4.0 MB\", và \"Phù hợp cho 3 tuổi trở lên\".  Có hai hình ảnh nhỏ được hiển thị bên dưới, có vẻ như là ảnh chụp màn hình của ứng dụng, có thể là ảnh chụp giao diện của ứng dụng.\n\n**Đoạn văn bản đã trích xuất:**\n\n*   Trung tâm dữ liệu quốc gia của vé dân cư\n*   Thông tin liên hệ của nhà phát hành\n*   Sức khỏe và Thẻ hình\n*   9 N Bài đánh giá\n*   4.0 MB\n*   Phù hợp cho 3 tuổi trở lên",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "xref": 77,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_4_0.jpeg",
+      "chunk_index": 31,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh chụp màn hình một ứng dụng hiển thị thông tin về một biểu mẫu.  Ở trung tâm là logo của \"VNeID\" – một biểu tượng xanh lá cây với hình ảnh một chiếc máy bay. Bên dưới logo là dòng chữ \"Trung tâm dữ liệu quốc gia về dân cư - Bộ Công an\".  Ứng dụng hiển thị các tùy chọn như \"Cập nhật lần cuối\" (cập nhật lần cuối), \"Thông tin bản cập nhật\" (thông tin bản cập nhật), \"Bộ sung quét QR code\" (bộ sung quét QR code), \"Thông tin liên hệ của nhà phát hành\" (thông tin liên hệ của nhà phát hành), và \"Về ứng dụng này\" (về ứng dụng này).  Có các thông tin về kích thước ứng dụng (4.0 MB), số lượng bài đánh giá (2.9), và độ tuổi phù hợp (3+).\n\n**Đoạn văn bản đã trích xuất:**\n\n*   Trung tâm dữ liệu quốc gia về dân cư - Bộ Công an\n*   Cập nhật lần cuối\n*   Thông tin bản cập nhật\n*   Bộ sung quét QR code\n*   Thông tin liên hệ của nhà phát hành\n*   Về ứng dụng này",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -174,13 +637,58 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_4_1.jpeg",
-      "chunk_index": 9,
+      "chunk_index": 32,
+      "part_of_element": 1,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "OCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh chụp màn hình một ứng dụng hiển thị thông tin về một biểu mẫu.  Ở trung tâm là logo của \"VNeID\" – một biểu tượng xanh lá cây với hình ảnh một chiếc máy bay. Bên dưới logo là dòng chữ \"Trung tâm dữ liệu quốc gia về dân cư - Bộ Công an\".  Ứng dụng hiển thị các tùy chọn như \"Cập nhật lần cuối\" (cập nhật lần cuối), \"Thông tin bản cập nhật\" (thông tin bản cập nhật), \"Bộ sung quét QR code\" (bộ sung quét QR code), \"Thông tin liên hệ của nhà phát hành\" (thông tin liên hệ của nhà phát hành), và \"Về ứng dụng này\" (về ứng dụng này).  Có các thông tin về kích thước ứng dụng (4.0 MB), số lượng bài đánh giá (2.9), và độ tuổi phù hợp (3+).\n\n**Đoạn văn bản đã trích xuất:**\n\n*   Trung tâm dữ liệu quốc gia về dân cư - Bộ Công an\n*   Cập nhật lần cuối\n*   Thông tin bản cập nhật\n*   Bộ sung quét QR code\n*   Thông tin liên hệ của nhà phát hành\n*   Về ứng dụng này",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "xref": 78,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_4_1.jpeg",
+      "chunk_index": 33,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_4_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "xref": 77,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_4_0.jpeg",
+      "chunk_index": 34,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "11Hình 2.1-3 Màn chào khi mở ứng dụng",
+    "content": "Chart Summary: Chart/Image: Image_4_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "xref": 78,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_4_1.jpeg",
+      "chunk_index": 35,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "<think>\nOkay, let's see. The user provided a text snippet that includes a page number and a figure reference. The original text is in Vietnamese, and they want it cleaned and reformatted.\n\nFirst, I need to check for any artifacts like page numbers or headers. The \"11\" at the start is probably a page number, so I should remove that. Then, the figure reference \"Hình 2.1-3 Màn chào khi mở ứng dụng\" seems to be part of the main text. The user mentioned not to remove meaningful content, so I should keep the figure reference but make sure the formatting is correct.\n\nThe original text has a line break after \"11\", which might be an artifact. I'll remove that. The figure title should be properly capitalized and formatted. In Vietnamese, figure references usually start with \"Hình\" followed by the number. The rest of the text is a description, so it should be a complete sentence.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -191,17 +699,48 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
-      "acronyms": null,
+      "acronyms": {
+        "detected": [
+          "[]"
+        ]
+      },
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 10,
+      "chunk_index": 36,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_5_0.jpeg",
+    "content": "I should check for any broken sentences or redundant whitespace. The original text seems okay, but maybe the hyphen in \"2.1-3\" should be a dash or period? Wait, in Vietnamese, figure numbers are often written with periods, like \"2.1.3\". So changing \"2.1-3\" to \"2.1.3\" would be more standard. \n\nPutting it all together, the cleaned text should be: \"Hình 2.1.3: Màn chào khi mở ứng dụng.\" Adding the colon after the figure number makes it clearer. Also, ensuring there's no extra space before the colon. \n\nI need to make sure not to remove any meaningful content. The figure number and description are both important. So the final output should be the figure reference properly formatted without the page number.\n</think>\n\nHình 2.1.3: Màn chào khi mở ứng dụng",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": {
+        "detected": [
+          "[]"
+        ]
+      },
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 37,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này thể hiện một bố cục hình ảnh nhân vật, có vẻ như là một hình ảnh minh họa hoặc một hình ảnh đại diện.  Hình ảnh bao gồm bốn nhân vật được đặt xung quanh một hình tròn lớn màu xanh lá cây.\n\n*   **Nhân vật trung tâm:** Một người đàn ông mặc đồng phục quân đội màu xanh lá cây đậm, đội mũ quân đội màu xanh lá cây. Anh ta đang mỉm cười tươi tắn.\n*   **Các nhân vật xung quanh:** Bên cạnh người đàn ông quân nhân, có ba nhân vật khác:\n    *   Một người phụ nữ trẻ, mặc áo dài truyền thống, đang mỉm cười nhẹ nhàng.\n    *   Một người đàn ông trẻ, mặc áo sơ mi trắng, đang nhìn thẳng vào máy ảnh.\n    *   Một người phụ nữ trẻ khác, mặc áo dài, đang nhìn vào máy ảnh.\n\nHình ảnh có vẻ như được thiết kế để thể hiện sự đoàn kết và niềm vui.  Màu sắc chủ đạo là xanh lá cây và trắng, tạo cảm giác tươi sáng và thân thiện.\n\n**Text extracted:**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -210,13 +749,43 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_0.jpeg",
-      "chunk_index": 11,
+      "chunk_index": 38,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_5_1.jpeg",
+    "content": "**Text extracted:**\n\nKhông có văn bản nào hiển thị rõ ràng trong hình ảnh.\n\nOCR Text:\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này thể hiện một bố cục hình ảnh nhân vật, có vẻ như là một hình ảnh minh họa hoặc một hình ảnh đại diện.  Hình ảnh bao gồm bốn nhân vật được đặt xung quanh một hình tròn lớn màu xanh lá cây.\n\n*   **Nhân vật trung tâm:** Một người đàn ông mặc đồng phục quân đội màu xanh lá cây đậm, đội mũ quân đội màu xanh lá cây. Anh ta đang mỉm cười tươi tắn.\n*   **Các nhân vật xung quanh:** Bên cạnh người đàn ông quân nhân, có ba nhân vật khác:\n    *   Một người phụ nữ trẻ, mặc áo dài truyền thống, đang mỉm cười nhẹ nhàng.\n    *   Một người đàn ông trẻ, mặc áo sơ mi trắng, đang nhìn thẳng vào máy ảnh.\n    *   Một người phụ nữ trẻ khác, mặc áo dài, đang nhìn vào máy ảnh.\n\nHình ảnh có vẻ như được thiết kế để thể hiện sự đoàn kết và niềm vui.  Màu sắc chủ đạo là xanh lá cây và trắng, tạo cảm giác tươi sáng và thân thiện.\n\n**Text extracted:**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_0.jpeg",
+      "chunk_index": 39,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "**Text extracted:**\n\nKhông có văn bản nào hiển thị rõ ràng trong hình ảnh.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_0.jpeg",
+      "chunk_index": 40,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết:**\n\nHình ảnh này là một màn hình điện thoại di động hiển thị một biểu tượng QR code lớn ở giữa. Bên cạnh QR code là các biểu tượng nhỏ hơn, bao gồm:\n\n*   **Biểu tượng thế giới:** Biểu tượng hình tròn có đường kẻ ngang, đại diện cho toàn cầu.\n*   **Biểu tượng người:** Biểu tượng hình người, có thể đại diện cho một tài khoản cá nhân hoặc một người dùng.\n*   **Các nút tròn:** Có ba nút tròn màu đỏ, có thể là các nút điều hướng hoặc nút xác nhận.\n\nMàn hình có màu trắng chủ đạo, tạo cảm giác sạch sẽ và hiện đại. Có các đường kẻ ngang và dọc mờ, tạo hiệu ứng 3D và làm cho hình ảnh trông giống như một ứng dụng hoặc một trang web.  Có các mũi tên hướng sang trái và phải, cho thấy có khả năng di chuyển hoặc điều hướng trong ứng dụng.\n\n**Đoạn văn bản đã trích xuất:**\n\nKhông có đoạn văn bản nào được hiển thị rõ ràng trong hình ảnh.  Chỉ có các biểu tượng và nút.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -225,13 +794,43 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_1.jpeg",
-      "chunk_index": 12,
+      "chunk_index": 41,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_5_2.jpeg",
+    "content": "**Đoạn văn bản đã trích xuất:**\n\nKhông có đoạn văn bản nào được hiển thị rõ ràng trong hình ảnh.  Chỉ có các biểu tượng và nút.\n\nOCR Text:\n**Mô tả chi tiết:**\n\nHình ảnh này là một màn hình điện thoại di động hiển thị một biểu tượng QR code lớn ở giữa. Bên cạnh QR code là các biểu tượng nhỏ hơn, bao gồm:\n\n*   **Biểu tượng thế giới:** Biểu tượng hình tròn có đường kẻ ngang, đại diện cho toàn cầu.\n*   **Biểu tượng người:** Biểu tượng hình người, có thể đại diện cho một tài khoản cá nhân hoặc một người dùng.\n*   **Các nút tròn:** Có ba nút tròn màu đỏ, có thể là các nút điều hướng hoặc nút xác nhận.\n\nMàn hình có màu trắng chủ đạo, tạo cảm giác sạch sẽ và hiện đại. Có các đường kẻ ngang và dọc mờ, tạo hiệu ứng 3D và làm cho hình ảnh trông giống như một ứng dụng hoặc một trang web.  Có các mũi tên hướng sang trái và phải, cho thấy có khả năng di chuyển hoặc điều hướng trong ứng dụng.\n\n**Đoạn văn bản đã trích xuất:**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 82,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_1.jpeg",
+      "chunk_index": 42,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "**Đoạn văn bản đã trích xuất:**\n\nKhông có đoạn văn bản nào được hiển thị rõ ràng trong hình ảnh.  Chỉ có các biểu tượng và nút.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 82,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_1.jpeg",
+      "chunk_index": 43,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh hiển thị một chiếc bút bi màu đen. Trên thân bút có một hình tròn màu xanh lá cây với một biểu tượng hình ngôi sao vàng trên nền xanh lá cây. Bên cạnh bút là một số biểu tượng nhỏ khác, bao gồm:\n\n*   Một biểu tượng sóng (có thể đại diện cho kết nối mạng).\n*   Một biểu tượng hình tia sét.\n*   Một biểu tượng hình dấu cộng.\n*   Một biểu tượng hình chữ thập.\n\nTổng thể, ảnh có vẻ như là một hình ảnh quảng cáo hoặc hướng dẫn sử dụng liên quan đến một sản phẩm có gắn logo của một tổ chức hoặc thương hiệu nào đó.\n\n**Chính xác các đoạn văn bản hiển thị:**\n\n“Bắt đầu sử dụng”\n\nOCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh hiển thị một chiếc bút bi màu đen. Trên thân bút có một hình tròn màu xanh lá cây với một biểu tượng hình ngôi sao vàng trên nền xanh lá cây. Bên cạnh bút là một số biểu tượng nhỏ khác, bao gồm:",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -240,13 +839,28 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_2.jpeg",
-      "chunk_index": 13,
+      "chunk_index": 44,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_5_3.jpeg",
+    "content": "*   Một biểu tượng sóng (có thể đại diện cho kết nối mạng).\n*   Một biểu tượng hình tia sét.\n*   Một biểu tượng hình dấu cộng.\n*   Một biểu tượng hình chữ thập.\n\nTổng thể, ảnh có vẻ như là một hình ảnh quảng cáo hoặc hướng dẫn sử dụng liên quan đến một sản phẩm có gắn logo của một tổ chức hoặc thương hiệu nào đó.\n\n**Chính xác các đoạn văn bản hiển thị:**\n\n“Bắt đầu sử dụng”",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 83,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_2.jpeg",
+      "chunk_index": 45,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này là một biểu tượng đỏ rực, có hình dạng của một ngôi sao tám cánh. Ngôi sao được bao quanh bởi các họa tiết hoa văn đỏ và vàng, tạo nên một hiệu ứng lấp lánh và trang trọng.  Hình nền là màu đỏ đậm, làm nổi bật biểu tượng trung tâm.  Tổng thể, hình ảnh mang đến cảm giác mạnh mẽ, trang trọng và có liên quan đến các hoạt động chính phủ hoặc tổ chức chính trị.\n\n**Chính xác hơn, có thể đây là biểu tượng của một tổ chức chính phủ Việt Nam, có thể liên quan đến việc xác thực điện tử hoặc các dịch vụ công cộng.**\n\n**Chính xác các đoạn văn bản:**\n\n*   “Úng dụng định danh điện tử có sử dụng thay thế các giấy tờ truyền thống, định danh công dân trên môi trường kỹ thuật số, cùng cấp các tiện ích phát triển công dân số, chính phủ số, xã hội số.”\n*   “Đăng nhập”\n*   “Kích hoạt tài khoản định danh điện tử”\n*   “Đăng nhập”\n*   “Bản 2.0”\n\n---",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -255,13 +869,103 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_3.jpeg",
-      "chunk_index": 14,
+      "chunk_index": 46,
+      "part_of_element": 1,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "---\n\n**Translation of the extracted text:**\n\n*   “Using digital identity for replacing traditional documents, digital citizen identification on digital environment, providing digital citizen services, digital government, and digital society.”\n*   “Login”\n*   “Activate digital identity account”\n*   “Login”\n*   “Version 2.0”\n\nDo you want me to elaborate on any specific aspect of the image or the text?\n\nOCR Text:\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này là một biểu tượng đỏ rực, có hình dạng của một ngôi sao tám cánh. Ngôi sao được bao quanh bởi các họa tiết hoa văn đỏ và vàng, tạo nên một hiệu ứng lấp lánh và trang trọng.  Hình nền là màu đỏ đậm, làm nổi bật biểu tượng trung tâm.  Tổng thể, hình ảnh mang đến cảm giác mạnh mẽ, trang trọng và có liên quan đến các hoạt động chính phủ hoặc tổ chức chính trị.\n\n**Chính xác hơn, có thể đây là biểu tượng của một tổ chức chính phủ Việt Nam, có thể liên quan đến việc xác thực điện tử hoặc các dịch vụ công cộng.**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_3.jpeg",
+      "chunk_index": 47,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "**Chính xác các đoạn văn bản:**\n\n*   “Úng dụng định danh điện tử có sử dụng thay thế các giấy tờ truyền thống, định danh công dân trên môi trường kỹ thuật số, cùng cấp các tiện ích phát triển công dân số, chính phủ số, xã hội số.”\n*   “Đăng nhập”\n*   “Kích hoạt tài khoản định danh điện tử”\n*   “Đăng nhập”\n*   “Bản 2.0”\n\n---\n\n**Translation of the extracted text:**\n\n*   “Using digital identity for replacing traditional documents, digital citizen identification on digital environment, providing digital citizen services, digital government, and digital society.”\n*   “Login”\n*   “Activate digital identity account”\n*   “Login”\n*   “Version 2.0”\n\nDo you want me to elaborate on any specific aspect of the image or the text?",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_5_3.jpeg",
+      "chunk_index": 48,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_0.jpeg",
+      "chunk_index": 49,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "2.1.2 Đối với hệ điều hành IOSCài đặt ứng dụng từ App Store- Bước 1: NSD mở App store trên thiết bị di độngHình 2.1-4 Vào kho ứng dụng- Bước 2: Tại mục Tìm kiếm NSD gõ “ VNeID ”",
+    "content": "Chart Summary: Chart/Image: Image_5_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 82,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_1.jpeg",
+      "chunk_index": 50,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_2.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 83,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_2.jpeg",
+      "chunk_index": 51,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_3.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_3.jpeg",
+      "chunk_index": 52,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "<think>\nOkay, let's tackle this. The user wants me to clean and reformat the provided text. First, I'll look at the original text.\n\nThe text starts with \"12\" which might be a page number or an artifact. Since the user mentioned to remove artifacts like page numbers, I should delete that. Then there's \"2.1.2 Đối với hệ điều hành IOS\" which is the main heading. The next part is about installing an app from the App Store. The list items have some issues: the first bullet point has \"Bước 1: NSD mở App store trên thiết bị di động\" and the second one is \"Bước 2: Tại mục Tìm kiếm NSD gõ “ VNeID ”\". \n\nI notice that the hyphen before each bullet is not consistent. The first one has four spaces before the hyphen, and the second has two. I should standardize that. Also, the text \"Hình 2.1-4 Vào kho ứng dụng\" is a figure reference. It's part of the main content, so I shouldn't remove it. The quotes around \"VNeID\" are correct, but maybe the space before the quote is unnecessary.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -272,17 +976,62 @@
         321.66998291015625,
         80.19261169433594
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 15,
+      "chunk_index": 53,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_6_0.jpeg",
+    "content": "I need to make sure the paragraphs are well-structured. The original has some line breaks that might be due to PDF formatting. I'll adjust the spacing between sentences and ensure the flow is natural. Also, check for any redundant whitespace. For example, after \"Bước 1:\" there's a space before the colon, which is correct. \n\nWait, the user said to preserve the original meaning and structure. So even if the formatting is off, I should keep the content as is but clean up the presentation. Let me reformat the bullets to have consistent indentation and spacing. Also, the figure reference should be included as part of the instructions. \n\nPutting it all together, the cleaned text should start with the heading, then the steps with proper bullet points, and include the figure reference. Make sure there are no extra spaces or line breaks that aren't part of the original content. Alright, that should do it.\n</think>",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 6,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 54,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "2.1.2 Đối với hệ điều hành iOS  \nCài đặt ứng dụng từ App Store  \n- Bước 1: Người dùng mở App Store trên thiết bị di động  \n  Hình 2.1-4: Vào kho ứng dụng  \n- Bước 2: Tại mục Tìm kiếm, người dùng gõ \"VNeID\"",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 6,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        80.19261169433594
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 55,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết:**\n\nHình ảnh này hiển thị một màn hình điện thoại với các biểu tượng ứng dụng được sắp xếp theo hàng ngang.  Chúng ta có thể thấy các biểu tượng sau:\n\n*   **Lịch:** Biểu tượng lịch.\n*   **Mail:** Biểu tượng hộp thư điện tử.\n*   **Podcast:** Biểu tượng podcast.\n*   **Điện thoại:** Biểu tượng điện thoại.\n*   **App Store:** Biểu tượng cửa hàng ứng dụng.\n*   **Tiện ích:** Biểu tượng tiện ích.\n*   **Số lượng tin nhắn:** Một biểu tượng hình đồng hồ hiển thị số 458.\n\nTổng thể, hình ảnh này cho thấy giao diện của một điện thoại thông minh với các ứng dụng phổ biến được cài đặt.\n\n**Đã trích xuất văn bản:**\n\n*   **Lịch**\n*   **Mail**\n*   **Podcast**\n*   **Tiện ích**\n*   **458**\n\n---\n\nDo you want me to describe anything else about the image, or perhaps focus on a specific aspect?\n\nOCR Text:\n**Mô tả chi tiết:**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -291,13 +1040,43 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_6_0.jpeg",
-      "chunk_index": 16,
+      "chunk_index": 56,
+      "part_of_element": 1,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "---\n\nDo you want me to describe anything else about the image, or perhaps focus on a specific aspect?\n\nOCR Text:\n**Mô tả chi tiết:**\n\nHình ảnh này hiển thị một màn hình điện thoại với các biểu tượng ứng dụng được sắp xếp theo hàng ngang.  Chúng ta có thể thấy các biểu tượng sau:\n\n*   **Lịch:** Biểu tượng lịch.\n*   **Mail:** Biểu tượng hộp thư điện tử.\n*   **Podcast:** Biểu tượng podcast.\n*   **Điện thoại:** Biểu tượng điện thoại.\n*   **App Store:** Biểu tượng cửa hàng ứng dụng.\n*   **Tiện ích:** Biểu tượng tiện ích.\n*   **Số lượng tin nhắn:** Một biểu tượng hình đồng hồ hiển thị số 458.\n\nTổng thể, hình ảnh này cho thấy giao diện của một điện thoại thông minh với các ứng dụng phổ biến được cài đặt.\n\n**Đã trích xuất văn bản:**\n\n*   **Lịch**\n*   **Mail**\n*   **Podcast**\n*   **Tiện ích**\n*   **458**\n\n---\n\nDo you want me to describe anything else about the image, or perhaps focus on a specific aspect?",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 6,
+      "xref": 87,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_6_0.jpeg",
+      "chunk_index": 57,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_6_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 6,
+      "xref": 87,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_6_0.jpeg",
+      "chunk_index": 58,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "13Hình 2.1-5 Vào kho ứng dụng- Bước 3: NSD nhấn “ Nhận” để tải ứng dụng VNeID về thiết bị di độngHình 2.1-6 Tìm kiếm ứng dụng trên App Store",
+    "content": "<think>\nOkay, let's tackle this. The user wants me to clean and reformat the provided text. The original text has some issues like page numbers, bullet points, and maybe some formatting inconsistencies.\n\nFirst, I notice the \"13\" at the beginning. That's probably a page number or an artifact from the PDF. Since the user said to remove artifacts like page numbers, I should delete that. \n\nNext, the text has \"Hình 2.1-5 Vào kho ứng dụng\" which translates to \"Figure 2.1-5 Enter the app store\". The hyphen in \"2.1-5\" might be a typo. Maybe it's supposed to be \"2.1.5\" or \"2.1-5\" is correct. I'll keep it as is unless there's a reason to change it.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -308,17 +1087,62 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 17,
+      "chunk_index": 59,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_7_0.png",
+    "content": "Then there's a bullet point: \"- Bước 3: NSD nhấn “ Nhận” để tải ứng dụng VNeID về thiết bị di động\". The bullet point is there, but the user mentioned to reformat into well-structured paragraphs. So I should convert that into a sentence without the bullet. Also, \"NSD\" is an abbreviation for \"Người sử dụng\" (User), so I should expand that to \"Người sử dụng\" for clarity. \n\nThe next line is \"Hình 2.1-6 Tìm kiếm ứng dụng trên App Store\". Similar to the first figure, but here it's about searching on the App Store. Again, I'll check if the numbering is correct. \n\nI need to make sure the sentences are properly connected. The original text seems to be instructions, so structuring them into a coherent paragraph would be better. Also, the quotes around \"Nhận\" should be corrected to proper quotation marks if needed, but since the user didn't mention that, maybe it's okay as is.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 60,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Wait, the user said to preserve the original meaning and structure. So even if there are minor formatting issues, I should keep the content. The main thing is to remove artifacts like page numbers and correct any broken sentences. \n\nPutting it all together, the cleaned text should start with the figure references, then the steps in a sentence format, and the next figure. Making sure there's no redundant whitespace and the flow is smooth. Let me check again for any other artifacts or formatting issues. Looks like that's all. Time to present the cleaned text.\n</think>\n\nHình 2.1-5: Vào kho ứng dụng  \nBước 3: Người sử dụng nhấn \"Nhận\" để tải ứng dụng VNeID về thiết bị di động.  \n\nHình 2.1-6: Tìm kiếm ứng dụng trên App Store",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 61,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết:**\n\nHình ảnh này là một màn hình tìm kiếm trên điện thoại.  Màn hình hiển thị một thanh tìm kiếm ở phía trên. Bên dưới thanh tìm kiếm, có ba dòng gợi ý tìm kiếm. Mỗi dòng bắt đầu bằng từ \"Tìm kiếm\" và sau đó là một từ hoặc cụm từ liên quan đến tìm kiếm. Cụ thể, ba dòng gợi ý tìm kiếm là:\n\n*   \"Tìm kiếm vneid\"\n*   \"Tìm kiếm app vneid\"\n*   \"Tìm kiếm vneid\"\n\nMàn hình có các nút điều hướng ( mũi tên lên và xuống) và một nút \"Tìm\" để bắt đầu quá trình tìm kiếm.  Tổng thể, đây là giao diện của ứng dụng tìm kiếm, có lẽ là một ứng dụng tìm kiếm thông tin liên quan đến \"vneid\".\n\n**Đã trích xuất văn bản:**\n\n*   vneid\n*   app vneid\n*   vneid\n\nOCR Text:\n**Mô tả chi tiết:**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -327,13 +1151,28 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_7_0.png",
-      "chunk_index": 18,
+      "chunk_index": 62,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_7_1.jpeg",
+    "content": "**Đã trích xuất văn bản:**\n\n*   vneid\n*   app vneid\n*   vneid\n\nOCR Text:\n**Mô tả chi tiết:**\n\nHình ảnh này là một màn hình tìm kiếm trên điện thoại.  Màn hình hiển thị một thanh tìm kiếm ở phía trên. Bên dưới thanh tìm kiếm, có ba dòng gợi ý tìm kiếm. Mỗi dòng bắt đầu bằng từ \"Tìm kiếm\" và sau đó là một từ hoặc cụm từ liên quan đến tìm kiếm. Cụ thể, ba dòng gợi ý tìm kiếm là:\n\n*   \"Tìm kiếm vneid\"\n*   \"Tìm kiếm app vneid\"\n*   \"Tìm kiếm vneid\"\n\nMàn hình có các nút điều hướng ( mũi tên lên và xuống) và một nút \"Tìm\" để bắt đầu quá trình tìm kiếm.  Tổng thể, đây là giao diện của ứng dụng tìm kiếm, có lẽ là một ứng dụng tìm kiếm thông tin liên quan đến \"vneid\".\n\n**Đã trích xuất văn bản:**\n\n*   vneid\n*   app vneid\n*   vneid",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 90,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_7_0.png",
+      "chunk_index": 63,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh này là một màn hình ứng dụng di động, có vẻ như là ứng dụng liên quan đến phòng chống dịch COVID-19 của Việt Nam.  Màn hình chia thành nhiều phần, có thể thấy các yếu tố sau:",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -342,13 +1181,88 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_7_1.jpeg",
-      "chunk_index": 19,
+      "chunk_index": 64,
+      "part_of_element": 1,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "*   **Logo:** Có logo của VNEID (có hình sao và chữ \"N\") ở góc trên bên trái.\n*   **Hình ảnh:** Có một hình ảnh chụp một cảnh biển, có thể là một bãi biển hoặc một vịnh biển. Có một nhóm người đang vui chơi trên bãi biển.\n*   **Các biểu tượng ứng dụng:** Có nhiều biểu tượng ứng dụng khác nhau, bao gồm:\n    *   Biểu tượng thuốc (hình thuốc lá)\n    *   Biểu tượng thông báo (hình cờ)\n    *   Biểu tượng trò chơi (hình trò chơi)\n    *   Biểu tượng tìm kiếm (hình kính lúp)\n*   **QR Code:** Có một mã QR code lớn ở phía trên bên trái.\n*   **Các phần chức năng:** Có các phần như \"Tìm kiếm\", \"Trò chơi\", \"Thông báo\", \"Tìm kiếm\" và \"Tìm kiếm\".\n*   **Màu sắc:** Màu sắc chủ đạo là xanh và trắng, tạo cảm giác tươi sáng và sạch sẽ.\n\n**Chính xác các đoạn văn bản:**\n\n*   **Tìm kiếm**\n*   **Trò chơi**\n*   **Thông báo**\n*   **Tìm kiếm**\n*   **Tìm kiếm**\n\n---\n\nDo you want me to focus on a specific aspect of the image, such as the QR code or the text elements?\n\nOCR Text:\n**Mô tả chi tiết ảnh:**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 91,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_7_1.jpeg",
+      "chunk_index": 65,
+      "part_of_element": 2,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "---\n\nDo you want me to focus on a specific aspect of the image, such as the QR code or the text elements?\n\nOCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh này là một màn hình ứng dụng di động, có vẻ như là ứng dụng liên quan đến phòng chống dịch COVID-19 của Việt Nam.  Màn hình chia thành nhiều phần, có thể thấy các yếu tố sau:",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 91,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_7_1.jpeg",
+      "chunk_index": 66,
+      "part_of_element": 3,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "*   **Logo:** Có logo của VNEID (có hình sao và chữ \"N\") ở góc trên bên trái.\n*   **Hình ảnh:** Có một hình ảnh chụp một cảnh biển, có thể là một bãi biển hoặc một vịnh biển. Có một nhóm người đang vui chơi trên bãi biển.\n*   **Các biểu tượng ứng dụng:** Có nhiều biểu tượng ứng dụng khác nhau, bao gồm:\n    *   Biểu tượng thuốc (hình thuốc lá)\n    *   Biểu tượng thông báo (hình cờ)\n    *   Biểu tượng trò chơi (hình trò chơi)\n    *   Biểu tượng tìm kiếm (hình kính lúp)\n*   **QR Code:** Có một mã QR code lớn ở phía trên bên trái.\n*   **Các phần chức năng:** Có các phần như \"Tìm kiếm\", \"Trò chơi\", \"Thông báo\", \"Tìm kiếm\" và \"Tìm kiếm\".\n*   **Màu sắc:** Màu sắc chủ đạo là xanh và trắng, tạo cảm giác tươi sáng và sạch sẽ.\n\n**Chính xác các đoạn văn bản:**\n\n*   **Tìm kiếm**\n*   **Trò chơi**\n*   **Thông báo**\n*   **Tìm kiếm**\n*   **Tìm kiếm**\n\n---\n\nDo you want me to focus on a specific aspect of the image, such as the QR code or the text elements?",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 91,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_7_1.jpeg",
+      "chunk_index": 67,
+      "part_of_element": 4,
+      "total_parts": 4
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_7_0.png - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 90,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_7_0.png",
+      "chunk_index": 68,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "- Bước 4: Sau khi tải xong, NSD click vào ứng dụng trên màn hình chính hoặc\nchọn Mở trên App Store để bắt đầu sử dụngHình 2.1-7 Ứng dụng trên điện thoại+ NSD ấn “ Bắt đầu sử dụng ” để bắt đầu sử dụng app:",
+    "content": "Chart Summary: Chart/Image: Image_7_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 91,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_7_1.jpeg",
+      "chunk_index": 69,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "<think>\nOkay, let's tackle this text cleaning task. The user provided a snippet from a PDF with some formatting issues. First, I need to understand what's going on here.\n\nLooking at the text, there's a line with \"14\" followed by a list item starting with \"-\". Then there's a mention of \"Hình 2.1-7\" which is probably a figure reference. The user wants me to clean this up, so I should remove any unnecessary whitespace or artifacts. \n\nThe first line \"14\" might be a page number or a typo. Since the user mentioned to remove artifacts like page numbers, I should probably delete that. Then, the list items have some extra spaces and maybe broken sentences. For example, \"-    Bước 4: Sau khi tải xong, NSD click vào ứng dụng...\" has extra spaces before the hyphen. I need to correct that by trimming the spaces.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -359,17 +1273,62 @@
         542.2897338867188,
         97.37260437011719
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 20,
+      "chunk_index": 70,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_8_0.jpeg",
+    "content": "Also, the text mentions \"NSD\" which stands for \"Người sử dụng\" in Vietnamese. I should check if that's consistent. The phrase \"chọn  Mở  trên App Store\" has extra spaces around \"Mở\", so I'll remove those. \n\nThe figure reference \"Hình 2.1-7 Ứng dụng trên điện thoại\" seems to be part of the main text, so I should keep it but make sure it's properly formatted. The next line starts with \"+ NSD ấn “ Bắt đầu sử dụng ”...\" which has spaces around the quote marks. I'll adjust that to have proper spacing and maybe use quotation marks correctly.\n\nI also need to ensure that the structure is clear. The original text has a step-by-step guide, so maintaining that structure is important. The user wants well-structured paragraphs and sentences in Vietnamese, so I'll rephrase any broken sentences and correct any grammar issues without changing the original meaning.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 8,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        542.2897338867188,
+        97.37260437011719
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 71,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Let me go through each line again. The first line \"14\" is likely an artifact, so I'll remove it. The list items should start with a hyphen without extra spaces. The figure reference should be on its own line, maybe with a heading. The last line about \"Bắt đầu sử dụng\" needs proper quotation marks and spacing.\n\nPutting it all together, the cleaned text should have the steps clearly listed, the figure reference properly placed, and all formatting issues resolved. I'll make sure not to remove any meaningful content and preserve the original structure as much as possible.\n</think>\n\nBước 4: Sau khi tải xong, người dùng click vào ứng dụng trên màn hình chính hoặc chọn \"Mở\" trên App Store để bắt đầu sử dụng.  \n\nHình 2.1-7: Ứng dụng trên điện thoại  \n\n+ Người dùng ấn \"Bắt đầu sử dụng\" để bắt đầu sử dụng ứng dụng.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 8,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        542.2897338867188,
+        97.37260437011719
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": null,
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 72,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh chụp màn hình của một giao diện điện thoại iPhone.  Chúng ta thấy một hàng các biểu tượng ứng dụng được sắp xếp theo chiều ngang. Các ứng dụng hiển thị bao gồm:\n\n*   **Tệp (Files):** Biểu tượng ứng dụng quản lý tệp tin.\n*   **Tìm (Search):** Biểu tượng ứng dụng tìm kiếm.\n*   **Phim ảnh (Photos):** Biểu tượng ứng dụng quản lý ảnh.\n*   **iTunes Store:** Biểu tượng cửa hàng ứng dụng Apple.\n*   **Watch:** Biểu tượng ứng dụng Apple Watch.\n*   **Mện (Messages):** Biểu tượng ứng dụng nhắn tin.\n*   **Định vị (Maps):** Biểu tượng ứng dụng bản đồ.\n*   **Tiện ích (Utilities):** Biểu tượng ứng dụng tiện ích.\n*   **Danh báo (Notifications):** Biểu tượng ứng dụng thông báo.\n*   **CGV Cinemas:** Biểu tượng của rạp chiếu phim CGV.\n*   **Sổ thu chi (Expense Tracker):** Biểu tượng ứng dụng theo dõi thu chi.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -378,13 +1337,58 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_8_0.jpeg",
-      "chunk_index": 21,
+      "chunk_index": 73,
+      "part_of_element": 1,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Hình ảnh có màu sắc chủ đạo là màu hồng và trắng.  Có một biểu tượng nổi bật là \"CGV Cinemas\" với logo của CGV.\n\n**Text Extracted:**\n\n*   **CGV Cinemas**\n*   **Sổ thu chi**\n*   **VNeldID**\n\nLet me know if you'd like me to focus on a specific aspect of the image!\n\nOCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh chụp màn hình của một giao diện điện thoại iPhone.  Chúng ta thấy một hàng các biểu tượng ứng dụng được sắp xếp theo chiều ngang. Các ứng dụng hiển thị bao gồm:",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 8,
+      "xref": 94,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_8_0.jpeg",
+      "chunk_index": 74,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "*   **Tệp (Files):** Biểu tượng ứng dụng quản lý tệp tin.\n*   **Tìm (Search):** Biểu tượng ứng dụng tìm kiếm.\n*   **Phim ảnh (Photos):** Biểu tượng ứng dụng quản lý ảnh.\n*   **iTunes Store:** Biểu tượng cửa hàng ứng dụng Apple.\n*   **Watch:** Biểu tượng ứng dụng Apple Watch.\n*   **Mện (Messages):** Biểu tượng ứng dụng nhắn tin.\n*   **Định vị (Maps):** Biểu tượng ứng dụng bản đồ.\n*   **Tiện ích (Utilities):** Biểu tượng ứng dụng tiện ích.\n*   **Danh báo (Notifications):** Biểu tượng ứng dụng thông báo.\n*   **CGV Cinemas:** Biểu tượng của rạp chiếu phim CGV.\n*   **Sổ thu chi (Expense Tracker):** Biểu tượng ứng dụng theo dõi thu chi.\n\nHình ảnh có màu sắc chủ đạo là màu hồng và trắng.  Có một biểu tượng nổi bật là \"CGV Cinemas\" với logo của CGV.\n\n**Text Extracted:**\n\n*   **CGV Cinemas**\n*   **Sổ thu chi**\n*   **VNeldID**\n\nLet me know if you'd like me to focus on a specific aspect of the image!",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 8,
+      "xref": 94,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_8_0.jpeg",
+      "chunk_index": 75,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_8_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 8,
+      "xref": 94,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_8_0.jpeg",
+      "chunk_index": 76,
       "part_of_element": 1,
       "total_parts": 1
     }
   },
   {
-    "content": "15Hình 2.1-8 Màn hình chào khi mở ứng dụng",
+    "content": "<think>\nOkay, let's see. The user provided a text snippet that includes a page number and a figure reference. The original text is in Vietnamese, and they want it cleaned and reformatted.\n\nFirst, I need to check for any artifacts like page numbers or headers. The \"15\" at the start is probably a page number, so I should remove that. Then, the figure reference \"Hình 2.1-8 Màn hình chào khi mở ứng dụng\" seems to be part of the main content. The user mentioned not to remove meaningful content, so I should keep the figure description. \n\nWait, the original text has \"Hình 2.1-8\" which is likely the figure number. The user might want this kept as part of the content. The rest is the description of the screen. So the cleaned text should just be the figure description without the page number.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -395,17 +1399,48 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
-      "acronyms": null,
+      "acronyms": {
+        "detected": [
+          "[]"
+        ]
+      },
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 22,
+      "chunk_index": 77,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_9_0.jpeg",
+    "content": "I need to make sure there are no redundant spaces. The original has a line break after \"15\", so I'll remove that. The final output should be the figure description properly formatted in Vietnamese. Let me double-check if there are any other artifacts. No, the rest seems okay. So the cleaned text is \"Hình 2.1-8: Màn hình chào khi mở ứng dụng.\" with a colon added for clarity, and the page number removed.\n</think>\n\nHình 2.1-8: Màn hình chào khi mở ứng dụng",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "bbox": [
+        85.10399627685547,
+        36.212650299072266,
+        321.66998291015625,
+        64.08000946044922
+      ],
+      "cleaned_with": "llm",
+      "entities": null,
+      "acronyms": {
+        "detected": [
+          "[]"
+        ]
+      },
+      "processed_language": "Vietnamese",
+      "element_type": "text",
+      "chunk_index": 78,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này thể hiện một bố cục hình ảnh nhân vật, có vẻ như là một hình ảnh minh họa hoặc một hình ảnh đại diện.  Hình ảnh bao gồm bốn nhân vật được đặt xung quanh một hình tròn lớn màu xanh lá cây.\n\n*   **Nhân vật trung tâm:** Một người đàn ông mặc đồng phục quân đội màu xanh lá cây đậm, đội mũ quân đội màu xanh lá cây. Anh ta đang mỉm cười tươi tắn.\n*   **Các nhân vật xung quanh:** Bên cạnh người đàn ông quân nhân, có ba nhân vật khác:\n    *   Một người phụ nữ trẻ, mặc áo dài truyền thống, đang mỉm cười nhẹ nhàng.\n    *   Một người đàn ông trẻ, mặc áo sơ mi trắng, đang nhìn thẳng vào máy ảnh.\n    *   Một người phụ nữ trẻ khác, mặc áo dài, đang nhìn vào máy ảnh.\n\nHình ảnh có vẻ như được thiết kế để thể hiện sự đoàn kết và niềm vui.  Màu sắc chủ đạo là xanh lá cây và trắng, tạo cảm giác tươi sáng và thân thiện.\n\n**Text extracted:**",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -414,13 +1449,43 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_0.jpeg",
-      "chunk_index": 23,
+      "chunk_index": 79,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_9_1.jpeg",
+    "content": "**Text extracted:**\n\nKhông có văn bản nào hiển thị rõ ràng trong hình ảnh.\n\nOCR Text:\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này thể hiện một bố cục hình ảnh nhân vật, có vẻ như là một hình ảnh minh họa hoặc một hình ảnh đại diện.  Hình ảnh bao gồm bốn nhân vật được đặt xung quanh một hình tròn lớn màu xanh lá cây.\n\n*   **Nhân vật trung tâm:** Một người đàn ông mặc đồng phục quân đội màu xanh lá cây đậm, đội mũ quân đội màu xanh lá cây. Anh ta đang mỉm cười tươi tắn.\n*   **Các nhân vật xung quanh:** Bên cạnh người đàn ông quân nhân, có ba nhân vật khác:\n    *   Một người phụ nữ trẻ, mặc áo dài truyền thống, đang mỉm cười nhẹ nhàng.\n    *   Một người đàn ông trẻ, mặc áo sơ mi trắng, đang nhìn thẳng vào máy ảnh.\n    *   Một người phụ nữ trẻ khác, mặc áo dài, đang nhìn vào máy ảnh.\n\nHình ảnh có vẻ như được thiết kế để thể hiện sự đoàn kết và niềm vui.  Màu sắc chủ đạo là xanh lá cây và trắng, tạo cảm giác tươi sáng và thân thiện.\n\n**Text extracted:**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_0.jpeg",
+      "chunk_index": 80,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "**Text extracted:**\n\nKhông có văn bản nào hiển thị rõ ràng trong hình ảnh.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_0.jpeg",
+      "chunk_index": 81,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết:**\n\nHình ảnh này là một màn hình điện thoại di động hiển thị một biểu tượng QR code lớn ở giữa. Bên cạnh QR code là các biểu tượng nhỏ hơn, bao gồm:\n\n*   **Biểu tượng thế giới:** Biểu tượng hình tròn có đường kẻ ngang, đại diện cho toàn cầu.\n*   **Biểu tượng người:** Biểu tượng hình người, có thể đại diện cho một tài khoản cá nhân hoặc một người dùng.\n*   **Các nút tròn:** Có ba nút tròn màu đỏ, có thể là các nút điều hướng hoặc nút xác nhận.\n\nMàn hình có màu trắng chủ đạo, tạo cảm giác sạch sẽ và hiện đại. Có các đường kẻ ngang và dọc mờ, tạo hiệu ứng 3D và làm cho hình ảnh trông giống như một ứng dụng hoặc một trang web.  Có các mũi tên hướng sang trái và phải, cho thấy có khả năng di chuyển hoặc điều hướng trong ứng dụng.\n\n**Đoạn văn bản đã trích xuất:**\n\nKhông có đoạn văn bản nào được hiển thị rõ ràng trong hình ảnh.  Chỉ có các biểu tượng và nút.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -429,13 +1494,43 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_1.jpeg",
-      "chunk_index": 24,
+      "chunk_index": 82,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 3
     }
   },
   {
-    "content": "Image Description: Image: Image_9_2.jpeg",
+    "content": "**Đoạn văn bản đã trích xuất:**\n\nKhông có đoạn văn bản nào được hiển thị rõ ràng trong hình ảnh.  Chỉ có các biểu tượng và nút.\n\nOCR Text:\n**Mô tả chi tiết:**\n\nHình ảnh này là một màn hình điện thoại di động hiển thị một biểu tượng QR code lớn ở giữa. Bên cạnh QR code là các biểu tượng nhỏ hơn, bao gồm:\n\n*   **Biểu tượng thế giới:** Biểu tượng hình tròn có đường kẻ ngang, đại diện cho toàn cầu.\n*   **Biểu tượng người:** Biểu tượng hình người, có thể đại diện cho một tài khoản cá nhân hoặc một người dùng.\n*   **Các nút tròn:** Có ba nút tròn màu đỏ, có thể là các nút điều hướng hoặc nút xác nhận.\n\nMàn hình có màu trắng chủ đạo, tạo cảm giác sạch sẽ và hiện đại. Có các đường kẻ ngang và dọc mờ, tạo hiệu ứng 3D và làm cho hình ảnh trông giống như một ứng dụng hoặc một trang web.  Có các mũi tên hướng sang trái và phải, cho thấy có khả năng di chuyển hoặc điều hướng trong ứng dụng.\n\n**Đoạn văn bản đã trích xuất:**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 97,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_1.jpeg",
+      "chunk_index": 83,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "**Đoạn văn bản đã trích xuất:**\n\nKhông có đoạn văn bản nào được hiển thị rõ ràng trong hình ảnh.  Chỉ có các biểu tượng và nút.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 97,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_1.jpeg",
+      "chunk_index": 84,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết ảnh:**\n\nẢnh hiển thị một chiếc bút bi màu đen. Trên thân bút có một hình tròn màu xanh lá cây với một biểu tượng hình ngôi sao vàng trên nền xanh lá cây. Bên cạnh bút là một số biểu tượng nhỏ khác, bao gồm:\n\n*   Một biểu tượng sóng (có thể đại diện cho kết nối mạng).\n*   Một biểu tượng hình tia sét.\n*   Một biểu tượng hình dấu cộng.\n*   Một biểu tượng hình chữ thập.\n\nTổng thể, ảnh có vẻ như là một hình ảnh quảng cáo hoặc hướng dẫn sử dụng liên quan đến một sản phẩm có gắn logo của một tổ chức hoặc thương hiệu nào đó.\n\n**Chính xác các đoạn văn bản hiển thị:**\n\n“Bắt đầu sử dụng”\n\nOCR Text:\n**Mô tả chi tiết ảnh:**\n\nẢnh hiển thị một chiếc bút bi màu đen. Trên thân bút có một hình tròn màu xanh lá cây với một biểu tượng hình ngôi sao vàng trên nền xanh lá cây. Bên cạnh bút là một số biểu tượng nhỏ khác, bao gồm:",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -444,13 +1539,28 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_2.jpeg",
-      "chunk_index": 25,
+      "chunk_index": 85,
       "part_of_element": 1,
-      "total_parts": 1
+      "total_parts": 2
     }
   },
   {
-    "content": "Image Description: Image: Image_9_3.jpeg",
+    "content": "*   Một biểu tượng sóng (có thể đại diện cho kết nối mạng).\n*   Một biểu tượng hình tia sét.\n*   Một biểu tượng hình dấu cộng.\n*   Một biểu tượng hình chữ thập.\n\nTổng thể, ảnh có vẻ như là một hình ảnh quảng cáo hoặc hướng dẫn sử dụng liên quan đến một sản phẩm có gắn logo của một tổ chức hoặc thương hiệu nào đó.\n\n**Chính xác các đoạn văn bản hiển thị:**\n\n“Bắt đầu sử dụng”",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 83,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_2.jpeg",
+      "chunk_index": 86,
+      "part_of_element": 2,
+      "total_parts": 2
+    }
+  },
+  {
+    "content": "Image Description: Okay, here's a detailed description of the image in Vietnamese, followed by the extracted text:\n\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này là một biểu tượng đỏ rực, có hình dạng của một ngôi sao tám cánh. Ngôi sao được bao quanh bởi các họa tiết hoa văn đỏ và vàng, tạo nên một hiệu ứng lấp lánh và trang trọng.  Hình nền là màu đỏ đậm, làm nổi bật biểu tượng trung tâm.  Tổng thể, hình ảnh mang đến cảm giác mạnh mẽ, trang trọng và có liên quan đến các hoạt động chính phủ hoặc tổ chức chính trị.\n\n**Chính xác hơn, có thể đây là biểu tượng của một tổ chức chính phủ Việt Nam, có thể liên quan đến việc xác thực điện tử hoặc các dịch vụ công cộng.**\n\n**Chính xác các đoạn văn bản:**\n\n*   “Úng dụng định danh điện tử có sử dụng thay thế các giấy tờ truyền thống, định danh công dân trên môi trường kỹ thuật số, cùng cấp các tiện ích phát triển công dân số, chính phủ số, xã hội số.”\n*   “Đăng nhập”\n*   “Kích hoạt tài khoản định danh điện tử”\n*   “Đăng nhập”\n*   “Bản 2.0”\n\n---",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -459,7 +1569,97 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_3.jpeg",
-      "chunk_index": 26,
+      "chunk_index": 87,
+      "part_of_element": 1,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "---\n\n**Translation of the extracted text:**\n\n*   “Using digital identity for replacing traditional documents, digital citizen identification on digital environment, providing digital citizen services, digital government, and digital society.”\n*   “Login”\n*   “Activate digital identity account”\n*   “Login”\n*   “Version 2.0”\n\nDo you want me to elaborate on any specific aspect of the image or the text?\n\nOCR Text:\n**Mô tả chi tiết hình ảnh:**\n\nHình ảnh này là một biểu tượng đỏ rực, có hình dạng của một ngôi sao tám cánh. Ngôi sao được bao quanh bởi các họa tiết hoa văn đỏ và vàng, tạo nên một hiệu ứng lấp lánh và trang trọng.  Hình nền là màu đỏ đậm, làm nổi bật biểu tượng trung tâm.  Tổng thể, hình ảnh mang đến cảm giác mạnh mẽ, trang trọng và có liên quan đến các hoạt động chính phủ hoặc tổ chức chính trị.\n\n**Chính xác hơn, có thể đây là biểu tượng của một tổ chức chính phủ Việt Nam, có thể liên quan đến việc xác thực điện tử hoặc các dịch vụ công cộng.**",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_3.jpeg",
+      "chunk_index": 88,
+      "part_of_element": 2,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "**Chính xác các đoạn văn bản:**\n\n*   “Úng dụng định danh điện tử có sử dụng thay thế các giấy tờ truyền thống, định danh công dân trên môi trường kỹ thuật số, cùng cấp các tiện ích phát triển công dân số, chính phủ số, xã hội số.”\n*   “Đăng nhập”\n*   “Kích hoạt tài khoản định danh điện tử”\n*   “Đăng nhập”\n*   “Bản 2.0”\n\n---\n\n**Translation of the extracted text:**\n\n*   “Using digital identity for replacing traditional documents, digital citizen identification on digital environment, providing digital citizen services, digital government, and digital society.”\n*   “Login”\n*   “Activate digital identity account”\n*   “Login”\n*   “Version 2.0”\n\nDo you want me to elaborate on any specific aspect of the image or the text?",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "image_summary",
+      "image_ref": "Image_9_3.jpeg",
+      "chunk_index": 89,
+      "part_of_element": 3,
+      "total_parts": 3
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_0.jpeg",
+      "chunk_index": 90,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 97,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_1.jpeg",
+      "chunk_index": 91,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_2.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 83,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_2.jpeg",
+      "chunk_index": 92,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_3.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_3.jpeg",
+      "chunk_index": 93,
       "part_of_element": 1,
       "total_parts": 1
     }
