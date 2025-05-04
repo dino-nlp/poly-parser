@@ -62,7 +62,7 @@ def detect_language(state: GraphState) -> Dict[str, Any]:
         lang_name = get_language_name(detected_language_code)
         if lang_name:
             detected_language_name = lang_name
-            print(f"Converted to language name: {detected_language_name}")
+            print(f"Language name: {detected_language_name}")
         else:
             print(f"Could not convert code '{detected_language_code}' to name. Using code as name.")
             detected_language_name = detected_language_code # Use code if name not found

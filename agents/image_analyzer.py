@@ -80,8 +80,8 @@ def analyze_images(state: GraphState) -> Dict[str, Any]:
                     img_base64 = base64.b64encode(image_bytes).decode('utf-8')
                     
                     # Include language in the prompt
-                    prompt = f"Describe this image in detail in {language}. What does it show? Is there any text visible? If yes, extract the text exactly as it appears."
-                    system_prompt = "You are an assistant tasked with describing table or image"
+                    prompt = f"Describe this image in detail in {language}. What does it show? Is there any text visible? If yes, extract the text exactly as it appears. NOTE: NO FURTHER EXPLANATION, JUST PROVIDE THE RESULT."
+                    system_prompt = "You are an assistant tasked with describing image"
                     system_message_template = SystemMessagePromptTemplate.from_template(system_prompt)
                     
                     human_prompt = [
@@ -97,13 +97,13 @@ def analyze_images(state: GraphState) -> Dict[str, Any]:
                         },
                     ]
                     human_message_template = HumanMessagePromptTemplate.from_template(human_prompt)
-                    prompt = ChatPromptTemplate.from_messages(
+                    final_prompt = ChatPromptTemplate.from_messages(
                         [
                             system_message_template,
                             human_message_template
                         ]
                     )
-                    summarize_chain = prompt | llm_image | StrOutputParser()
+                    summarize_chain = final_prompt | llm_image | StrOutputParser()
                     llm_result = summarize_chain.invoke(img_base64)
                     print(f"    LLM Result (raw): {llm_result[:100]}...")
                     description = llm_result.strip()

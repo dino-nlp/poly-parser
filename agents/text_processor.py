@@ -30,6 +30,7 @@ DEFAULT_LANGUAGE = "English" # Fallback language
 
 # Initialize Ollama LLM
 llm = ChatOllama(model=os.getenv("TEXT_PROCESSOR_MODEL"), temperature=0)
+print(f"LLM model for text processing: {os.getenv("TABLE_ANALYZER_MODEL")}")
 
 # --- Basic Cleaning Functions ---
 def basic_text_cleaning(text: str) -> str:

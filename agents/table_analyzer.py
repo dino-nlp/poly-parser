@@ -20,17 +20,20 @@ if USE_LLM_FOR_TABLES:
         import os
 
         llm_table = ChatOllama(model=os.getenv("TABLE_ANALYZER_MODEL"), temperature=0)
+        print(f"LLM model for table analyzer: {os.getenv("TABLE_ANALYZER_MODEL")}")
 
         # Define prompts based on output format, including language
         prompt_text = None
         if TABLE_OUTPUT_FORMAT == 'summary':
             prompt_text = ("You are a data analysis assistant. Analyze the following table data "
                         "(provided as Markdown, list of lists, or HTML) and provide a concise summary "
-                        "of its key information or purpose in {language}.\n\nTable Data:\n{table_content}\n\nSummary (in {language}):")
+                        "of its key information or purpose in {language}.\n\nTable Data:\n{table_content}\n\nSummary (in {language}):"
+                        "NO FURTHER EXPLANATION, JUST PROVIDE THE RESULT.")
         elif TABLE_OUTPUT_FORMAT == 'markdown':
              prompt_text = ("You are a data formatting assistant. Convert the following table data "
                             "(provided as list of lists or HTML) into a clean GitHub-flavored Markdown table. "
-                            "Ensure the headers are correctly identified if possible. Respond ONLY with the Markdown table.\n\nTable Data:\n{table_content}\n\nMarkdown Table:")
+                            "Ensure the headers are correctly identified if possible. Respond ONLY with the Markdown table.\n\nTable Data:\n{table_content}\n\nMarkdown Table:"
+                            "NO FURTHER EXPLANATION, JUST PROVIDE THE RESULT.")
              # Note: Markdown itself is language-agnostic, but the LLM processing it understands the context language.
         # Add other formats if needed
 
