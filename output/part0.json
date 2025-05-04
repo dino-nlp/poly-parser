@@ -11,9 +11,10 @@
         318.42999267578125,
         80.19261169433594
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
       "chunk_index": 0,
       "part_of_element": 1,
@@ -21,7 +22,7 @@
     }
   },
   {
-    "content": "Table (Format: markdown_basic):\n|  | STT |  |  | Thuật ngữ |  |  | Ý nghĩa |  |\n|--|----|-|-|----------|-|-|--------|-|\n| 1 | None | None | CCCD | None | None | Căn cước công dân | None | None |\n| 2 | None | None | SĐT | None | None | Số điện thoại | None | None |\n| 3 | None | None | NSD | None | None | Người sử dụng | None | None |",
+    "content": "Table (Format: error):\nError processing table: [Errno 61] Connection refused",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
       "page_count": 9,
@@ -35,7 +36,7 @@
       "table_index": 0,
       "element_type": "table_processed",
       "table_ref": "table_1_0",
-      "table_format": "markdown_basic",
+      "table_format": "error",
       "chunk_index": 1,
       "part_of_element": 1,
       "total_parts": 1
@@ -53,9 +54,10 @@
         318.42999267578125,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
       "chunk_index": 2,
       "part_of_element": 1,
@@ -78,6 +80,21 @@
     }
   },
   {
+    "content": "Chart Summary: Chart/Image: Image_2_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 2,
+      "xref": 51,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_2_0.jpeg",
+      "chunk_index": 4,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
     "content": "2. HƯỚNG DẪN SỬ DỤNG2.1 Hướng dẫn cài đặt2.1.1 Đối với hệ điều hành AndroidCài đặt ứng dụng từ CH Play- Bước 1 : NSD truy cập ứng dụng CH Play  Tại thanh công cụ tìm kiếm \nTìm từ khoá “ VNeID ”Hình 2.1-1 Tìm kiếm ứng dụng trên CH Play- Bước 2 : Sau khi App cần tải hiển thị  Chọn “ Cài đặt ” để tải App “Ứngdụng định danh điện tử - VNeID” về máy.",
     "metadata": {
       "source": "sample_pdfs/part0.pdf",
@@ -89,11 +106,12 @@
         318.42999267578125,
         80.19261169433594
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 4,
+      "chunk_index": 5,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -108,7 +126,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_3_0.jpeg",
-      "chunk_index": 5,
+      "chunk_index": 6,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -123,7 +141,37 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_3_1.png",
-      "chunk_index": 6,
+      "chunk_index": 7,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_3_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "xref": 62,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_3_0.jpeg",
+      "chunk_index": 8,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_3_1.png - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 3,
+      "xref": 63,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_3_1.png",
+      "chunk_index": 9,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -140,11 +188,12 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 7,
+      "chunk_index": 10,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -159,7 +208,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_4_0.jpeg",
-      "chunk_index": 8,
+      "chunk_index": 11,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -174,7 +223,37 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_4_1.jpeg",
-      "chunk_index": 9,
+      "chunk_index": 12,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_4_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "xref": 77,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_4_0.jpeg",
+      "chunk_index": 13,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_4_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 4,
+      "xref": 78,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_4_1.jpeg",
+      "chunk_index": 14,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -191,11 +270,12 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 10,
+      "chunk_index": 15,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -210,7 +290,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_0.jpeg",
-      "chunk_index": 11,
+      "chunk_index": 16,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -225,7 +305,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_1.jpeg",
-      "chunk_index": 12,
+      "chunk_index": 17,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -240,7 +320,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_2.jpeg",
-      "chunk_index": 13,
+      "chunk_index": 18,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -255,7 +335,67 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_5_3.jpeg",
-      "chunk_index": 14,
+      "chunk_index": 19,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_0.jpeg",
+      "chunk_index": 20,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 82,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_1.jpeg",
+      "chunk_index": 21,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_2.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 83,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_2.jpeg",
+      "chunk_index": 22,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_5_3.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 5,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_5_3.jpeg",
+      "chunk_index": 23,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -272,11 +412,12 @@
         321.66998291015625,
         80.19261169433594
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 15,
+      "chunk_index": 24,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -291,7 +432,22 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_6_0.jpeg",
-      "chunk_index": 16,
+      "chunk_index": 25,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_6_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 6,
+      "xref": 87,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_6_0.jpeg",
+      "chunk_index": 26,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -308,11 +464,12 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 17,
+      "chunk_index": 27,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -327,7 +484,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_7_0.png",
-      "chunk_index": 18,
+      "chunk_index": 28,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -342,7 +499,37 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_7_1.jpeg",
-      "chunk_index": 19,
+      "chunk_index": 29,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_7_0.png - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 90,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_7_0.png",
+      "chunk_index": 30,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_7_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 7,
+      "xref": 91,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_7_1.jpeg",
+      "chunk_index": 31,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -359,11 +546,12 @@
         542.2897338867188,
         97.37260437011719
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 20,
+      "chunk_index": 32,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -378,7 +566,22 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_8_0.jpeg",
-      "chunk_index": 21,
+      "chunk_index": 33,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_8_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 8,
+      "xref": 94,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_8_0.jpeg",
+      "chunk_index": 34,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -395,11 +598,12 @@
         321.66998291015625,
         64.08000946044922
       ],
-      "cleaned_with": "basic",
+      "cleaned_with": "llm",
       "entities": null,
       "acronyms": null,
+      "processed_language": "Vietnamese",
       "element_type": "text",
-      "chunk_index": 22,
+      "chunk_index": 35,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -414,7 +618,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_0.jpeg",
-      "chunk_index": 23,
+      "chunk_index": 36,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -429,7 +633,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_1.jpeg",
-      "chunk_index": 24,
+      "chunk_index": 37,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -444,7 +648,7 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_2.jpeg",
-      "chunk_index": 25,
+      "chunk_index": 38,
       "part_of_element": 1,
       "total_parts": 1
     }
@@ -459,7 +663,67 @@
       "temp_image_path": null,
       "element_type": "image_summary",
       "image_ref": "Image_9_3.jpeg",
-      "chunk_index": 26,
+      "chunk_index": 39,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_0.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 81,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_0.jpeg",
+      "chunk_index": 40,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_1.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 97,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_1.jpeg",
+      "chunk_index": 41,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_2.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 83,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_2.jpeg",
+      "chunk_index": 42,
+      "part_of_element": 1,
+      "total_parts": 1
+    }
+  },
+  {
+    "content": "Chart Summary: Chart/Image: Image_9_3.jpeg - Analysis failed.",
+    "metadata": {
+      "source": "sample_pdfs/part0.pdf",
+      "page_count": 9,
+      "page_number": 9,
+      "xref": 84,
+      "temp_image_path": null,
+      "element_type": "chart_summary",
+      "chart_ref": "Image_9_3.jpeg",
+      "chunk_index": 43,
       "part_of_element": 1,
       "total_parts": 1
     }

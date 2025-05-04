@@ -3,12 +3,12 @@ from graph_definition import GraphState
 from langchain.text_splitter import RecursiveCharacterTextSplitter, MarkdownTextSplitter # Example splitters
 
 # --- Configuration ---
-CHUNK_STRATEGY = "recursive" # Options: "recursive", "markdown", "semantic" (requires embedding model)
+CHUNK_STRATEGY = "semantic" # Options: "recursive", "markdown", "semantic" (requires embedding model)
 CHUNK_SIZE = 1000 # Target size for chunks (in characters for recursive/markdown)
 CHUNK_OVERLAP = 150 # Overlap between chunks
 # For semantic chunking (if implemented):
-# EMBEDDING_MODEL = "all-MiniLM-L6-v2" # Example sentence-transformer model
-# SEMANTIC_THRESHOLD = 0.85 # Example percentile threshold
+EMBEDDING_MODEL = "bge-m3:latest" 
+SEMANTIC_THRESHOLD = 0.85 
 
 # Initialize text splitters
 recursive_splitter = RecursiveCharacterTextSplitter(
@@ -25,26 +25,26 @@ markdown_splitter = MarkdownTextSplitter(
 )
 
 # Placeholder for semantic chunking setup
-# if CHUNK_STRATEGY == "semantic":
-#     try:
-#         from langchain_experimental.text_splitter import SemanticChunker
-#         from langchain_community.embeddings import OllamaEmbeddings # Or SentenceTransformerEmbeddings
-#
-#         embeddings = OllamaEmbeddings(model="nomic-embed-text", base_url=os.getenv("OLLAMA_BASE_URL"))
-#         # embeddings = SentenceTransformerEmbeddings(model_name=EMBEDDING_MODEL)
-#
-#         semantic_splitter = SemanticChunker(
-#             embeddings=embeddings,
-#             breakpoint_threshold_type="percentile", # Or "standard_deviation", "interquartile"
-#             breakpoint_threshold_amount=SEMANTIC_THRESHOLD
-#         )
-#         print("Initialized Semantic Chunker.")
-#     except ImportError:
-#         print("Semantic Chunker or embedding model not available. Falling back to recursive.")
-#         CHUNK_STRATEGY = "recursive"
-#     except Exception as e:
-#         print(f"Error initializing Semantic Chunker: {e}. Falling back to recursive.")
-#         CHUNK_STRATEGY = "recursive"
+if CHUNK_STRATEGY == "semantic":
+    try:
+        from langchain_experimental.text_splitter import SemanticChunker
+        from langchain_ollama import OllamaEmbeddings
+
+        embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
+        # embeddings = SentenceTransformerEmbeddings(model_name=EMBEDDING_MODEL)
+
+        semantic_splitter = SemanticChunker(
+            embeddings=embeddings,
+            breakpoint_threshold_type="percentile", # Or "standard_deviation", "interquartile"
+            breakpoint_threshold_amount=SEMANTIC_THRESHOLD
+        )
+        print("Initialized Semantic Chunker.")
+    except ImportError:
+        print("Semantic Chunker or embedding model not available. Falling back to recursive.")
+        CHUNK_STRATEGY = "recursive"
+    except Exception as e:
+        print(f"Error initializing Semantic Chunker: {e}. Falling back to recursive.")
+        CHUNK_STRATEGY = "recursive"
 
 
 def create_chunks(state: GraphState) -> Dict[str, Any]:
@@ -118,8 +118,8 @@ def create_chunks(state: GraphState) -> Dict[str, Any]:
                 else:
                      # Use recursive for general text or non-markdown tables/summaries
                      chunks = recursive_splitter.split_text(content_to_chunk)
-            # elif CHUNK_STRATEGY == "semantic" and semantic_splitter:
-            #     chunks = semantic_splitter.split_text(content_to_chunk)
+            elif CHUNK_STRATEGY == "semantic" and semantic_splitter:
+                chunks = semantic_splitter.split_text(content_to_chunk)
             else: # Default to recursive
                 chunks = recursive_splitter.split_text(content_to_chunk)
 

@@ -3,9 +3,9 @@ from graph_definition import GraphState
 import os
 import fitz # To potentially extract chart images
 import base64
-from langchain_core.messages import HumanMessage
 import re # Import re for potential parsing if needed
-
+from langchain.schema.output_parser import StrOutputParser
+from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplate, SystemMessagePromptTemplate
 # --- Configuration ---
 USE_MULTIMODAL_LLM_FOR_CHARTS = True
 DEFAULT_LANGUAGE = "English" # Fallback language
@@ -16,9 +16,9 @@ if USE_MULTIMODAL_LLM_FOR_CHARTS:
     try:
         from langchain_ollama import ChatOllama
         llm_chart = ChatOllama(model=os.getenv("IMAGE_ANALYZER_MODEL"), temperature=0)
-        print("Initialized Ollama for chart analysis (llava).")
+        print(f"Initialized Ollama for chart analysis ({os.getenv("IMAGE_ANALYZER_MODEL")}).")
     except ImportError:
-        print("langchain_community.llms.Ollama not found. Cannot use LLM for chart analysis.")
+        print("langchain_ollama not found. Cannot use LLM for chart analysis.")
         USE_MULTIMODAL_LLM_FOR_CHARTS = False
     except Exception as e:
         print(f"Failed to initialize Ollama for charts: {e}")
@@ -80,18 +80,35 @@ def analyze_charts(state: GraphState) -> Dict[str, Any]:
                 img_base64 = base64.b64encode(image_bytes).decode('utf-8')
                 # Include language in the prompt
                 prompt = (f"Analyze this image in {language}. Is it a chart or graph? "
-                          f"If yes, identify the chart type (e.g., bar, line, pie). "
-                          f"Describe the main data presented, key trends, or insights shown in the chart in {language}. "
-                          f"Extract axis labels and the title if visible. "
-                          f"If it's not a chart, briefly describe what it is in {language}.")
-
-                msg = HumanMessage(
-                    content=[
-                        {"type": "text", "text": prompt},
-                        {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{img_base64}"}}
-                     ]
+                        f"If yes, identify the chart type (e.g., bar, line, pie). "
+                        f"Describe the main data presented, key trends, or insights shown in the chart in {language}. "
+                        f"Extract axis labels and the title if visible. "
+                        f"If it's not a chart, briefly describe what it is in {language}."
+                        "NO FURTHER EXPLANATION, JUST PROVIDE THE RESULT.")
+                
+                system_prompt = "You are an assistant tasked with describing table or image or chart"
+                system_message_template = SystemMessagePromptTemplate.from_template(system_prompt)
+                human_prompt = [
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": "data:image/png;base64," + "{img_base64}",
+                            },
+                        },
+                        {
+                            "type": "text",
+                            "text": prompt
+                        },
+                    ]
+                human_message_template = HumanMessagePromptTemplate.from_template(human_prompt)
+                final_prompt = ChatPromptTemplate.from_messages(
+                    [
+                        system_message_template,
+                        human_message_template
+                    ]
                 )
-                llm_result = llm_chart.invoke(msg)
+                parser_chain = final_prompt | llm_chart | StrOutputParser()
+                llm_result = parser_chain.invoke(img_base64)
                 summary = llm_result.strip()
                 print(f"    LLM Chart Analysis Result: {summary[:150]}...")
 
